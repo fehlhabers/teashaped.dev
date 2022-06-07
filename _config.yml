@@ -1,0 +1,15 @@
+title: Teashaped Development
+description: A Fehlhaber Consulting Blog
+
+baseurl: "" 
+url: "https://teashaped.dev"
+github_username:  kejne
+show_excerpts: true
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-target-blank
+  - jekyll-sitemap
