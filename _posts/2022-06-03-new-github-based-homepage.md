@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "New GitHub based homepage!"
+title:  "I created a GitHub based homepage!"
 date:   2022-06-03
-last_modified_at: 2022-06-04
+last_modified_at: 2022-06-09
 cover_image: 2022-06-03-cover.jpg
 author: Kaj Fehlhaber
 categories: homepage 
@@ -11,10 +11,20 @@ categories: homepage
 I didn't want to put too much effort in creating a site, but at the same time create something that mirrors who I am.
 I work a lot with teams, cloud architecture and backend functionality, but have never really had the urge to do any advanced frontend work. 
 
-When I discovered [Jekyll](https://github.com/jekyll/jekyll) and that it can be hosted right out of GitHub, this fit me quite perfectly!
+What I **do**, however, is to focus on comprehensive documentation that is close to the code. Writing short, meaningful README:s with Mermaid or PlantUml for example.
 
-The repo for this page is public, so check it out [here](https://github.com/fehlhabers/fehlhaberconsulting.se)
+### Enter Jekyll & GitHub Pages
 
-Writing posts on my mobile also works nice! For example, this particular part of the post was done using [mGit](https://github.com/maks/MGit) &  [markor](https://github.com/gsantner/markor) for Android. Can take a picture of me in the sun and add it right in markor! 
+When I discovered [Jekyll](https://github.com/jekyll/jekyll) and that it can be hosted right out of GitHub, this fit me quite perfectly! It allows me to write my homepage in Markdown and to have all the resources visible to me right in my repo!
+I push my changes, and GitHub actions kick in to publish the changes. :raised_hands: 
 
-After having tried this out a bit, I'm ready to add some more about what I do and get the rest of the page up to date! 
+### Page is publicly available
+
+The repo for this page is public, so check it out [here](https://github.com/fehlhabers/teashaped.dev) :point_left:
+
+
+### Git on the go!
+
+Writing posts on my mobile also works nice! For example, this particular part of the post was done using [MGit](https://github.com/maks/MGit) &  [markor](https://github.com/gsantner/markor) for Android. The cover picture of me in the sun was added to the post in markor, although it probably needs some automation to be smooth. :robot:  
+
+
