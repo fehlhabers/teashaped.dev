@@ -15,7 +15,7 @@ What I **do**, however, is to focus on comprehensive documentation that is close
 
 ### Enter Jekyll & GitHub Pages
 
-When I discovered [Jekyll](https://github.com/jekyll/jekyll) and that it can be hosted right out of GitHub, this fit me quite perfectly! It allows me to write my homepage in Markdown and to have all the resources visible to me right in my repo!
+When I discovered [Jekyll](https://github.com/jekyll/jekyll) and that it can be hosted right out of Github using [GitHub Pages](https://pages.github.com/), this fit me quite perfectly! It allows me to write my homepage in Markdown and to have all the resources visible to me right in my repo!
 I push my changes, and GitHub actions kick in to publish the changes. :raised_hands: 
 
 ### Git on the go!
