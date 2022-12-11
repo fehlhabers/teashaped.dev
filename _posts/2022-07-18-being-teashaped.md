@@ -10,8 +10,18 @@ categories: homepage
 
 _"Jack of all trades, master of none - but oftentimes better than master of one"_
 
-I didn't call this blog "teashaped" for nothing. I'm what you could call a full-fledged generalist. But, how come?
 While I admire individuals with the tenacity to hone their specialized skills to perfection, I also know the time that is needed in order to get to that level!
+There is always need for people really skilled at a particular thing, but just as many times you need people skilled in being able to tie several skills together into a solution.
+
+### What is T-shaped and why should you care? 
+The notion of T shaped comes from the idea that you might specialize in one area, but that you maintain basic knowledge of the surrounding areas. An I-shaped individual would in this case be a specialist. 
+But why is this something you should do? 
+
+Well, if looking not too far back it was quite common to divide teams into different technologies instead of value streams. This could mean a database team, a frontend team and a backend team. 
+Unfortunately, this still happens today. 
+This caused a lot of dependencies between teams when delivering features, greatly increasing time to market. 
+These are typical silos, 
+
 
 ### Pareto principle
 While having some kind of main skill base, I often invest time in putting in some effort in understanding the fundamental and intermediate principles of neighbouring skills that I either feel are strategically important or simply because they seem fun to explore!
