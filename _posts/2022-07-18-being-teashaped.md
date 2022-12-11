@@ -13,17 +13,17 @@ _"Jack of all trades, master of none - but oftentimes better than master of one"
 While I admire individuals with the tenacity to hone their specialized skills to perfection, I also know the time that is needed in order to get to that level!
 There is always need for people really skilled at a particular thing, but just as many times you need people skilled in being able to tie several skills together into a solution.
 
-### What is T-shaped and why should you care? 
+## What is T-shaped and why should you care? 
 The notion of T shaped comes from the idea that you might specialize in one area, but that you maintain basic knowledge of the surrounding areas. An I-shaped individual would in this case be a specialist. 
-But why is this something you should do? 
+But why is this something you should put effort in, rather than focusing on your specialty? 
 
-Well, if looking not too far back it was quite common to divide teams into different technologies instead of value streams. This could mean a database team, a frontend team and a backend team. 
+Well, if looking not too far back it was quite common to divide teams into different technologies instead of value streams. This could mean for example a database team, a frontend team and a backend team. 
 Unfortunately, this still happens today. 
-This caused a lot of dependencies between teams when delivering features, greatly increasing time to market. 
-These are typical silos, 
+This causes a lot of dependencies between teams when delivering features, greatly increasing time to market since it requires coordination, hand-offs and so on.
 
+In more modern approaches, teams are cross functional and have the competences needed to provide value in the same team. By having multiple disciplines in the same team, value can be delivered faster. However, the work load is never perfectly distributed over different disciplines and people get sick and have vacations. Thus, members need to learn ech others discipline to some degree. Backend developers will need to do some frontend, UX will do some development and so forth.
 
-### Pareto principle
+## Pareto principle
 While having some kind of main skill base, I often invest time in putting in some effort in understanding the fundamental and intermediate principles of neighbouring skills that I either feel are strategically important or simply because they seem fun to explore!
 
 One such sprint could be to dive into a new programming language, some popular service, photography or some sport!
@@ -37,7 +37,7 @@ _I do not have any kind of proof of this being the case, but they are rather per
 
 In practice, this would mean that with 20% of the effort, I would be 80% efficient with my new skill. These values are of course just only some general values, but the gist is that you can get to a quite decent level by investing some time into it, without honing only that skill. Some examples from my persona life would be: sourdough bread & photography.
 
-### Experiment
+## Experiment
 
 For both these skills, I invested quite some time during periods to not only learn the basics of these skills, but also continue to more intermediate and advanced levels. When you focus on something where you see great progress and can see the result, it's easy to make it fun!
 To reach quite advanced levels doesn't necessarily take such a long time - it all comes down to **experimentation!**
