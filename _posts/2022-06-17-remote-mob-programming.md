@@ -69,9 +69,8 @@ The downside with having a too big ensemble is that it requires a very focused t
 - Swarm when struggling with a solution
 - Swarm when the ensembles proposed direction will impact the overall service 
 
-The true strength comes when the team can self-organize and split into smaller groups and merge into larger fluently.
 
-![](../assets/images/mob-cookbook/swarm.jpeg)
+![](../assets/images/mob-cookbook/swarm.jpeg)<br>_The true strength comes when the team can self-organize and split and swarm fluently_
 
 ## Explore what works for the team 
 Every team is different and different persons have different needs. It's as simple as that. Because of this, it's not possible to just select a framework and start using it for everyone. The same goes with this playbook. I might call it "the remote team playbook", but that's more to have a crisp title. It's probably not for everyone, but I would argue that a team which has a collaborative stance like this is much more likely to be a high performing team.
