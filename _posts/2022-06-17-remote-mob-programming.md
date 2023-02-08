@@ -80,4 +80,5 @@ I previously pointed to some examples of how to break down a day and when to do 
 ## Effective ensembles
 Just putting a lot of developers in a group to start developing will not magically create a high performing team or give any specific wins by itself. This is the area where the team is in most need of guidance and maybe also specific workshops to learn the basics if no one has any previous experience of ensemble programming. 
 
-The basics with an effective ensemble is that one person is typing and the others are telling what to do. When being more than a pair, a third or forth might read up on something or clear the path for the main path where the typist edits and the focus is.
+An ensemble does not have to have a specific setup, but most commonly one person is the typist and the others navigators. Since working remote means everyone has a workstation, the typing can be quickly handed over, since the screen sharing can simply be taken over. Getting into the **routine of using a timer to rotate typist** and to take breaks is my **strong recommendation**. The risk of members zoning out or getting fatigued increases dramatically during prolonged sessions without swithcing.
+
