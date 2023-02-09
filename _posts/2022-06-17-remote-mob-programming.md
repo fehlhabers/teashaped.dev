@@ -80,5 +80,28 @@ I previously pointed to some examples of how to break down a day and when to do 
 ## Effective ensembles
 Just putting a lot of developers in a group to start developing will not magically create a high performing team or give any specific wins by itself. This is the area where the team is in most need of guidance and maybe also specific workshops to learn the basics if no one has any previous experience of ensemble programming. 
 
-An ensemble does not have to have a specific setup, but most commonly one person is the typist and the others navigators. Since working remote means everyone has a workstation, the typing can be quickly handed over, since the screen sharing can simply be taken over. Getting into the **routine of using a timer to rotate typist** and to take breaks is my **strong recommendation**. The risk of members zoning out or getting fatigued increases dramatically during prolonged sessions without swithcing.
+An ensemble does not have to have a specific setup, but most commonly one person is the typist and the others navigators. Since working remote means everyone has a workstation, the typing can be quickly handed over, since the screen sharing can simply be taken over. Getting into the **routine of using a timer to rotate typist** and to take breaks is my **strong recommendation**. The risk of members zoning out or getting fatigued increases dramatically during prolonged sessions without switching.
+
+The most important part of an ensemble is to build a **high trust environment** where all members can express their opinion and propose solutions without the risk of them being ridiculed or discarded. Pay extra attention to this and raise situations in the team. This is **crucial in any team**, but becomes obvious when working in ensembles.
+
+## Automate, improve and make use of tools
+As with any DevOps team, it's all about automating and continously improving. The same goes with the workflow during an ensemle which I will be covering here. 
+
+### Git handovers
+I highly recommend to use a tool like [`mob.sh`](https://mob.sh) to quickly push changes to a mob branch where other participants join in and take over. It's as easy as typing `mob next` and `mob start`!
+
+![](../assets/images/mob-cookbook/mobsh.png)
+
+Why is this important? As mentioned earlier, switching typist should be done often so it's important that this process is very quick so changes can be done seamlessly without causing context switching. 
+
+### Dot-files
+Every team should have a shared config that can onboard new members in matter of minutes instead of using days to prepare. A so called dot-files repository which is used to get a new environment up quickly. Important is to have a common configuration for things like `mob.sh` formatting rules for IDEs, common build tools and CLI.s.
+I don't know how many times I've set this up for a team and productivity immediately increased as simple tasks and config was standardized and removed cognitive load from the team members.
+
+### Remote equipment
+Since work is done remote and the team will be in an online meetings for most of the workday, help each other out in having good audio and video. If a team member has a bad audio setup, make them aware of this. Have a small campaign in equipping everyone with a good microphone/headset - it's a simple way of removing obstacles.
+
+![](../assets/images/mob-cookbook/microphone.png)
+
+Video is also important, but the quality is not as important. Facial expressions, gestures and others are important parts during discussions - but video is also important just to show that you're actually there. Maybe there was an urgent call, children came crashing in during work or whatever reason? With video you can see what happened (or lack of video could indicate something happened).
 
