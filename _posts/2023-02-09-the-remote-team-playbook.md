@@ -118,3 +118,10 @@ I have by no means invented all this myself, but rather documented the experienc
 There is of course a lot into a great team. Without great people, there will not be a great team. But what "great" means does need to be the same thing. People are puzzle pieces that together can achieve greatness.
 
 I hope this helps whoever reads this in trying out something new and daring to go outside of the norm and instead have a progressive approach to development!
+<br>
+<br>
+<br>  
+![](/assets/images/kaj.jpg){:style="margin-left: 0px;margin-right: auto;"}
+**Kaj Fehlhaber**<br> 
+Freelancing Software Consultant<br>
+_Accelerating the DevOps Journey of Teams!_
