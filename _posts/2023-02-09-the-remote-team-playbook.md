@@ -11,7 +11,7 @@ And before you say "That seems awfully inefficient, one programming and others w
 
 
 ## Ingredients for a successful remote team :bulb:
-The main identifiers for a successful remote team in my experience has been those hat can mimic the communication bandwidth of being co-located combined with the focus of being remote. 
+The main identifiers for a successful remote team in my experience has been those that can mimic the communication bandwidth of being co-located combined with the focus of being remote. 
 
 A high trust environment is crucial and the described approach will help in achieving it, but at the same time requires that proper attention is put in having a good environment.
 
@@ -86,7 +86,7 @@ _Don't stick to the same rules just because! Re-evaluate regularly as life and c
 ## Effective ensembles
 Just putting a lot of developers in a group to start developing will not magically create a high performing team or give any specific wins by itself. This is the area where the team is in most need of guidance and maybe also specific workshops to learn the basics if no one has any previous experience of ensemble programming. 
 
-An ensemble does not have to have a specific setup, but most commonly one person is the typist and the others navigators. Since working remote means everyone has a workstation, the typing can be quickly handed over, since the screen sharing can simply be taken over. Getting into the **routine of using a timer to rotate typist** and to take breaks is my **strong recommendation**. :heavy_check_mark: The risk of members zoning out or getting fatigued increases dramatically during prolonged sessions without switching.
+An ensemble does not have to have a specific setup, but most commonly one person is the typist and the others navigators. Since working remote means everyone has a workstation, the typing can be quickly handed over, since the screen sharing can simply be taken over. Getting into the **routine of using a timer to rotate typist** and to take breaks is my **strong recommendation**. The risk of members zoning out or getting fatigued increases dramatically during prolonged sessions without switching.
 
 The most important part of an ensemble is to build a **high trust environment** where all members can express their opinion and propose solutions without the risk of them being ridiculed or discarded. Pay extra attention to this and raise situations in the team. This is **crucial in any team**, but becomes obvious when working in ensembles.
 
