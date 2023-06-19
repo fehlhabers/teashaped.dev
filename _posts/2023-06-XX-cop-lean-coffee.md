@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CoP ❤️  Lean Coffee"
+title: "What you need to know to know about Community of Practices (CoP)"
 author: Kaj Fehlhaber
 date: 2023-06-16
 # cover_image:
@@ -19,6 +19,8 @@ If so, you should probably try to take the initiative to start a Community of Pr
 A CoP (or Community of Practice) is as it sounds like, a community. The goal of the CoP is for the participants to share knowledge and experience within their practice. The participants should be practitioners in the field and should be able to contribute to the community by sharing their experience and tips. CoP is not a specific team, but consists of people with a common goal or interest. A CoP could for example be about a programming language, a specific domain or platform within your company.
 
 You could say that CoP is like the counterpart of CoE (Center of Excellence) where a specific team gathers expert knowledge about a specific area. The CoP works the other way around and let the teams drive the need and to organize between themselves.
+
+Another name for a CoP is also "Guild", if you're using the Spotify namings with Squads, Tribes & Chapters.
 ![](/assets/images/cop-lean-coffee/community.png)
 
 ## Should I just start one?
@@ -71,3 +73,7 @@ Well, because literally anyone can take up the facilitator role during a session
 Not all topics get the needed interest from practitioners! This is often very natural. A topic might be highly relevant during a period, be it short or long. What might happen is that there is no longer the same need. Maybe teams have now become proficient enough in an area that they do not have the same interest or need anymore? In that case, it might be time to either meet more seldom, or also decide to terminate the activity. The CoP can always be revived again if needed, but it might also be a good idea to switch topic to a more suitable one?
 
 ![](/assets/images/cop-lean-coffee/reaper.png)
+
+## Final thoughts
+I just went through some aspects, both on theoretical and practical levels, on why I think that CoPs are an important part of a modern organization and some tips on how to make them successful.
+It might be important to note that any type of community setup like this requires some level of maturity in the culture of self-organization and ownership of teams. Start small, make it inclusive. Even if the organization is not yet mature enough for the concept of CoP to work, it will still habe a positive impact and might help initiatives further ahead.
