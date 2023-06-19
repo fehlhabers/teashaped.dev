@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What you need to know to know about Community of Practices (CoP)"
+title: "What you need to know to know about CoP:s and Guilds"
 author: Kaj Fehlhaber
 date: 2023-06-16
 # cover_image:
@@ -21,6 +21,7 @@ A CoP (or Community of Practice) is as it sounds like, a community. The goal of 
 You could say that CoP is like the counterpart of CoE (Center of Excellence) where a specific team gathers expert knowledge about a specific area. The CoP works the other way around and let the teams drive the need and to organize between themselves.
 
 Another name for a CoP is also "Guild", if you're using the Spotify namings with Squads, Tribes & Chapters.
+
 ![](/assets/images/cop-lean-coffee/community.png)
 
 ## Should I just start one?
