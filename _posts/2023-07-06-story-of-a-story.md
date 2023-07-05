@@ -6,19 +6,12 @@ cover_image: story-of-story/mvp.png
 author: Kaj Fehlhaber
 categories: mvp,testing,story-slicing,yagni
 ---
-Let me take you through the work process of a feature we just implemented...
+Let me take you through the work process of a story we just worked with...
 
-**First some short overview of what we were about to develop:**
-
-The feature required us to interface with an identity provider and an external endpoint.
-It would be the first feature in our service which required accessing external endpoints and as a result, we would also like to be able to mock the service for our automated system tests. A capability we do not yet have.
-The feature would be an update to an existing functionality, so it could break the existing service.
-Our service would run in parallel with another service, so the external systems should not be called more than for specific conditions.
-
-How would you go about it? How do you introduce the external dependency without a big bang? And how do you setup the testing?
+I do this because I want to both challenge the view of testing, story slicing and the ever reoccuring plague of over- and pre-optimization, as well as giving some concrete examples of ways to break work apart in smaller pieces. I won't go deep into details, but try to raise relevant parts in every step. Let's check it out!
 
 ## Unofficial ground rules
-What we do boils down to some simple rules:
+A lot of the upcoming steps will have some rules or topics in common, namely:
 
 - Set small completable goals which leaves you with everything merged and in a deployable state
 - ABSOLUTELY no pre-optimization!
@@ -28,7 +21,17 @@ What we do boils down to some simple rules:
 
 How would this look in practice? Let's go through it.
 
+**But first some short overview of what we were about to develop:**
+
+The feature required us to interface with an identity provider and an external endpoint.
+It would be the first feature in our service which requires accessing external endpoints and as a result we would also like to be able to mock the service for our automated system tests. A capability we do not yet have.
+The feature would be an update to an existing functionality, so it could break the existing service.
+Our service would run in parallel with another service, so the external systems should not be called more than for specific conditions.
+
+How would you go about it? How do you introduce the external dependency without a big bang? And how do you setup the testing?
+
 ## Our steps
+
 ### Create client library
 Since we have two new interfaces where one *will* be reused and is a prereq of the other, we start out by creating a thin library client for it.
 Since it's an identity provider using oauth, we want to implement it as a read-through cache. We unit test it and achieve our first goal. We feel confident enough with unit tests at this stage, since it is a stable interface and we have worked with it before.
