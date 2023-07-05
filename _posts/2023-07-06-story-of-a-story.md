@@ -3,7 +3,7 @@ layout: post
 title:  "Story of a Story about Minimal Viable Change"
 date:   2023-07-06
 last_modified_at: 2023-07-06
-cover_image: 2022-06-03-cover.jpg
+cover_image: story-of-story/mvp.png
 author: Kaj Fehlhaber
 categories: mvp,testing,story-slicing,yagni
 ---
