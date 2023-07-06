@@ -51,7 +51,7 @@ Manual testing against real endpoints done using altered component tests which i
 
 ![](/assets/images/story-of-story/Step5.png)
 ### Mock server
-Our goals is that most our automated system tests use mocked external systems to ensure we have control over our tests and avoid flakiness.
+Our goals is that most of our automated system tests use mocked external systems to ensure we have control over our tests and avoid flakiness.
 Therefore, next step is to be able to enable the feature using only mock server first.
 We create a very simple web server with endpoints mocking the real servers, add to our pipeline and merge. CI/CD build and deploys.
 
@@ -68,7 +68,7 @@ We add another step to our existing test scenario, where we use the new mock ser
 ![](/assets/images/story-of-story/Step7.png)
 ### Enable real endpoints
 Since it's important not to call the real endpoints other than for specific conditions to start with (same as canary), we wrap the new component with the toggling functionality. We can inject both mock and real URL:s as well as secrets. The component can remain unchanged. We see that we need a system wide solution for dynamic feature toggling, but do not need it for this feature. We implement a simple solution now and create a new item in Jira about the need of the new functionality.
-System tests are updated with one E2E test using the real endpoint (which meats the conditions to use the real endpoints) and another which is identified as _test_ and thus routed to mock server. DONE!
+System tests are updated with one E2E test using the real endpoint (which meets the conditions to use the real endpoints) and another which is identified as _test_ and thus routed to mock server. DONE!
 
 ![](/assets/images/story-of-story/Step8.png)
 ## Wrapping up
