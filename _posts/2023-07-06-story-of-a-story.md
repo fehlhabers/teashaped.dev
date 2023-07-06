@@ -4,7 +4,6 @@ title:  "Story of a Story about Minimal Viable Change"
 date:   2023-07-05
 cover_image: story-of-story/cover.jpg
 author: Kaj Fehlhaber
-categories: mvp,testing,story-slicing,yagni
 ---
 Let me take you through the work process of a story we just worked with...
 
