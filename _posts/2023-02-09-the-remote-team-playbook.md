@@ -25,8 +25,8 @@ _Let's go through the ingredients one by one!_
 - Automate, improve and make use of tools
 
 
-## Ensembles by default :couple::couple:
-The first and biggest step is for the team to switch from doing pairs ad-hoc once in a while to do it by default! Pair and ensemble programming becomes the defacto standard within the team and going solo is the exception during the main work day.
+## Ensembles by default 🧍🧍
+The first and biggest step is for the team to switch from doing pairs ad-hoc once in a while to do it by default! Pair and ensemble programming becomes the de facto standard within the team and going solo is the exception during the main work day.
 
 There are still lot of things that we need to do on our own and we need different amount of time for solo work in the team. This can be things like reading up on something, time reporting, etc. The important part when going to ensemble by default is to _set some ground rules_. 
 
@@ -37,7 +37,7 @@ This has worked quite well for us since we've built up a high trust environment 
 
 ![](/assets/images/mob-cookbook/pair-programming.jpeg)
 
-## Find the right size :elephant: :mouse: 
+## Find the right size 🐘🐭
 Ensemble/mob programming can be efficiently implemented in teams of varying sizes, but still adhere to the same restrictions as any other team i.e. best 8 or less. I have been using this method successfully in a team of 8, but also in a growing team from 2 to 5.
 
 The way the method scales is in the ability to break out in multiple ensembles or pairs and swarm quickly and frequently. Experiment with what sizes fit best for your team, but the sizing that has worked best in my experience is to have groups of 2-3 people and rather have 2 groups with 3, instead of 3 groups with 2 (someone is sick, someone can jump out to help others, etc).
