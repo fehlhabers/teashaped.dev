@@ -70,21 +70,24 @@ as the applications are containerized, we're all good!
 
 ## 📦 The container
 I've chosen to create a very simple Golang application to be the example at hand. See [the gitops-example repo](https://github.com/fehlhabers/gitops-example/apps/cruncher) for full info.
-However, this can be done in any language as long as it can be containerized. A strength of Golang is that the app can be built into a single binary
-which can be added to `scratch`, eliminating pulling in any potential vulnerabilities in a runtime. In this case, the container weighs in at only **9MB**.
+The reason I did this is to demonstrate how a container can be done very small and secure. A strength of compiled languages like Golang is that the app can be built into a single binary which can be added to `scratch`, eliminating pulling in any potential vulnerabilities in a runtime. In this case, the container weighs in at only **9MB**.
 
+However, all languages can be containerized. It's just a matter of how much of a runtime is needed for the language. For example Java, you need a container with a JRE, for Python an interpreter, NodeJS, etc. You just pull in more dependencies which you need to scan and handle.
+
+Disregardless
 **Dockerfile using the builder pattern** 
 ```Dockerfile
-# syntax=docker/dockerfile:1
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /src
 COPY . .
-RUN go mod download
-RUN go build -o /bin/app .
-RUN useradd -u 10001 appuser
+RUN go mod download          # Downloads in separate layer for caching
+RUN go build -o /bin/app .   # Build binary in builder
+RUN useradd -u 10001 appuser # Create non-root user
 
-##########################################################
+##########################################################################
+# This is the image we deploy. It *only* contains the binary and user-info
+
 FROM scratch
 COPY --from=builder /bin/app app
 COPY --from=builder /etc/passwd /etc/passwd
