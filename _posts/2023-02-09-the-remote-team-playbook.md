@@ -3,7 +3,7 @@ layout: post
 title: "The Remote Team Playbook"
 author: Kaj Fehlhaber
 date: 2023-02-09
-cover_image: 2023-02-09-the-remote-team-playbook.png
+cover_image: 2023-02-09-the-remote-team-playbook.jpg
 --- 
 
 Was your Corona remote work period a lonely experience with a lot of Slack messages and PR:s to reivew? Well, it doesn't need to be that bad, but let me share some experiences with working with remote mob proramming as default.
@@ -107,7 +107,7 @@ I don't know how many times I've set this up for a team and productivity immedia
 ### Remote equipment
 Since work is done remote and the team will be in an online meetings for most of the workday, help each other out in having good audio and video. If a team member has a bad audio setup, make them aware of this. Have a small campaign in equipping everyone with a good microphone/headset - it's a simple way of removing obstacles.
 
-![](/assets/images/mob-cookbook/microphone.png)
+![](/assets/images/mob-cookbook/microphone.jpg)
 
 Video is also important, but the quality is not as important. Facial expressions, gestures and others are important parts during discussions - but video is also important just to show that you're actually there. Maybe there was an urgent call, children came crashing in during work or whatever reason? With video you can see what happened (or lack of video could indicate something happened).
 
