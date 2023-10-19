@@ -16,7 +16,7 @@ building the most basic building blocks in order to be successful.
 
 **Want to get to the code right away?** Check out the accompanied [Github repository](https://github.com/fehlhabers/gitops-example)! 👈
 
-## GitOps - what is it?
+## 🤔 GitOps - what is it?
 In short GitOps basically means that everything that you see in the trunk (main branch) of a repository is also what is deployed.
 It's much like how Kubernetes works; you specify a *desired state* and the system tries to reach this state by deploying or tearing down resources.
 
@@ -35,7 +35,7 @@ Unfortunately, there is no one-size fits all solution out there, so setting up a
 Different technologies need different approaches, where CI/CD pipelines are built in a way to make a repository act as a GitOps repository.
 Let's dive into an example with some concrete technologies and the challenges and solutions to them!
 
-## Goal of the journey
+## 🎯 Goal of the journey
 The journey of this blog post series will take us through a couple of concepts and technologies. I will be using some popular tools and technologies when it comes to cloud computing,
 but these are by no means the only or best way for you. They are a mix of technologies I want to explore and technologies I'm familiar with.
 
@@ -52,7 +52,7 @@ The setup consists of:
 This can become a quite daunting task in a complex environment, so we'll split it up in this series in order to focus on *one thing at a time*.
 The focus area of the first part is therefore to just be able to create the *base flow for building containers!*
 
-# Let's start! 
+# 🚀 Let's start! 
 The first objective of this journey will be to be able to have an infrastructure which supports building applications and deploying these
 to different stages. This is the backbone of any GitOps setup.
 What I'm talking about is of course to package your applications in a way which makes it possible to easily deploy the version of our choice
@@ -61,15 +61,14 @@ and to be able to quickly do so.
 This can be done in a bunch of different ways. Maybe you use serverless functions like AWS Lambdas or VMs, but since I'm creating this with
 Kubernetes in mind I will show best practices using **containers**.
 
-## Repository structure
+## 📁 Repository structure
 There is really no special structure needed in a repository, but since I have chosen to go with a mono repository, it's important to put all
 applications in directory for applications and that all applications are built in the same way. Check out [my repository](https://github.com/fehlhabers/gitops-example) for an example.
 
 The applications do not need to be built with the same language, but it makes things easier when it comes to package management and such. As long
-as the applications are containerized, we're all good.
+as the applications are containerized, we're all good!
 
 ## 📦 The container
-When building your repository
 I've chosen to create a very simple Golang application to be the example at hand. See [the gitops-example repo](https://github.com/fehlhabers/gitops-example/apps/cruncher) for full info.
 However, this can be done in any language as long as it can be containerized. A strength of Golang is that the app can be built into a single binary
 which can be added to `scratch`, eliminating pulling in any potential vulnerabilities in a runtime. In this case, the container weighs in at only **9MB**.
