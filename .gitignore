@@ -1,5 +1,7 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Hugo output
+public/
+resources/
+.hugo_build.lock
+
+# Editor
+.vscode/

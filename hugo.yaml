@@ -1,0 +1,69 @@
+# Hugo configuration file
+title: Teashaped Development
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - name: Blog
+      pageRef: /blog
+      weight: 1
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Services
+      pageRef: /services
+      weight: 3
+    - name: Contact
+      url: "/contact"
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/kejne"
+      params:
+        icon: github
+    - name: LinkedIn
+      weight: 7
+      url: "https://www.linkedin.com/in/kajfehlhaber/"
+      params:
+        icon: linkedin
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: teashaped-180x180.png
+      dark: teashaped-180x180.png
+      link: /
+      width: 40
+      height: 20
+  footer:
+    displayCopyright: false
+    displayPoweredBy: false
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+
+  editURL:
+    enable: false
+
