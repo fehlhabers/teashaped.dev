@@ -1,17 +1,16 @@
 ---
-layout: post
 title: "The Remote Team Playbook"
-author: Kaj Fehlhaber
+authors:
+  - name: Kaj Fehlhaber
 date: 2023-02-09
-cover_image: 2023-02-09-the-remote-team-playbook.jpg
---- 
-
-Was your Corona remote work period a lonely experience with a lot of Slack messages and PR:s to reivew? Well, it doesn't need to be that bad, but let me share some experiences with working with remote mob proramming as default.
+---
+![Cover image](cover.jpg)
+Was your Corona remote work period a lonely experience with a lot of Slack messages and PR:s to review? Well, it doesn't need to be that bad, but let me share some experiences with working with remote mob programming as default.
 And before you say "That seems awfully inefficient, one programming and others watching!" - keep on reading! Let me share how I have been working in my two previous teams! 
 
 
-## Ingredients for a successful remote team :bulb:
-The main identifiers for a successful remote team in my experience has been those that can mimic the communication bandwidth of being co-located combined with the focus of being remote. 
+## Ingredients for a successful remote team 💡
+The main identifiers for a successful remote team in my experience has been those that can mimic the communication bandwidth of being co-located combined with the focus of being remote.
 
 A high trust environment is crucial and the described approach will help in achieving it, but at the same time requires that proper attention is put in having a good environment.
 
@@ -35,7 +34,7 @@ Lunch is at a set time with a semi-fluent length and working in the ensemble unt
 
 This has worked quite well for us since we've built up a high trust environment - often experiment and reflecting in order to change when needed. My recommendation would be to start with this kind of simple setup first and then alter if needed.
 
-![](/assets/images/mob-cookbook/pair-programming.jpeg)
+![](pair-programming.jpeg)
 
 ## Find the right size 🐘🐭
 Ensemble/mob programming can be efficiently implemented in teams of varying sizes, but still adhere to the same restrictions as any other team i.e. best 8 or less. I have been using this method successfully in a team of 8, but also in a growing team from 2 to 5.
@@ -51,10 +50,10 @@ A key element of remote ensembles and especially with multiple ensembles is to h
 
 I've been using Teams and Slack which both work great for this. In Teams, we created a team in which we created some channels. When we broke out after daily, we simply went to "Group 1" & "Group 2" channels and started ad-hoc meetings there. Teams showed a symbol at the channel that indicates that someone is in a meeting there and others can easily join. Slack works in a similar way, where we setup multiple channels and started huddles in them.
 
-![](/assets/images/mob-cookbook/teams-breakouts.png) <br>
+![](teams-breakouts.png) <br>
 _Having static channels for sessions make it easy to see where to reach team mates_
 
-![Slack breakout example](/assets/images/mob-cookbook/slack-breakouts.png) <br>
+![Slack breakout example](slack-breakouts.png) <br>
 _Same setup, but in Slack_
 
 The important part is that **you're always in an online meeting** and if someone needs to talk to you, it's visible and they can just jump into the meeting. This also makes life easier for product owners and scrum masters to traverse in the team or get pulled in when needed.
@@ -74,7 +73,7 @@ Some examples of mechanisms:
 - Swarm when the ensembles proposed direction will impact the overall service 
 
 
-![](/assets/images/mob-cookbook/swarm.jpeg)<br>_The true strength comes when the team can self-organize and split and swarm fluently_
+![](swarm.jpeg)<br>_The true strength comes when the team can self-organize and split and swarm fluently_
 
 ## Explore what works for the team 
 Every team is different and different persons have different needs. It's as simple as that. Because of this, it's not possible to just select a framework and start using it for everyone. The same goes with this playbook. I might call it "The Remote Team Playbook", but that's more to have a crisp title. It's probably not for everyone, but I would argue that a team which has a collaborative stance like this is much more likely to be a high performing team.
@@ -91,12 +90,12 @@ An ensemble does not have to have a specific setup, but most commonly one person
 The most important part of an ensemble is to build a **high trust environment** where all members can express their opinion and propose solutions without the risk of them being ridiculed or discarded. Pay extra attention to this and raise situations in the team. This is **crucial in any team**, but becomes obvious when working in ensembles.
 
 ## Automate, improve and make use of tools
-As with any DevOps team, it's all about automating and continously improving. The same goes with the workflow during an ensemle which I will be covering here. 
+As with any DevOps team, it's all about automating and continuously improving. The same goes with the workflow during an ensemle which I will be covering here. 
 
 ### Git handovers
 I highly recommend to use a tool like [`mob.sh`](https://mob.sh) to quickly push changes to a mob branch where other participants join in and take over. It's as easy as typing `mob next` and `mob start`! This way the work can be shared across multiple workstations without any complex software - just leveraging git.
 
-![](/assets/images/mob-cookbook/mobsh.png)
+![](mobsh.png)
 
 Why is this important? As mentioned earlier, switching typist should be done often so it's important that this process is very quick so changes can be done seamlessly without causing context switching. But with every tool that is used in collaboration - **all members need to use it** for it to be effective, which brings us to the next part...
 
@@ -107,7 +106,7 @@ I don't know how many times I've set this up for a team and productivity immedia
 ### Remote equipment
 Since work is done remote and the team will be in an online meetings for most of the workday, help each other out in having good audio and video. If a team member has a bad audio setup, make them aware of this. Have a small campaign in equipping everyone with a good microphone/headset - it's a simple way of removing obstacles.
 
-![](/assets/images/mob-cookbook/microphone.jpg)
+![](microphone.jpg)
 
 Video is also important, but the quality is not as important. Facial expressions, gestures and others are important parts during discussions - but video is also important just to show that you're actually there. Maybe there was an urgent call, children came crashing in during work or whatever reason? With video you can see what happened (or lack of video could indicate something happened).
 
@@ -120,8 +119,5 @@ There is of course a lot into a great team. Without great people, there will not
 I hope this helps whoever reads this in trying out something new and daring to go outside of the norm and instead have a progressive approach to development!
 <br>
 <br>
-<br>  
-![](/assets/images/kaj.jpg){:style="margin-left: 0px;margin-right: auto;"}
-**Kaj Fehlhaber**<br> 
-Freelancing Software Consultant<br>
-_Accelerating the DevOps Journey of Teams!_
+<br>
+**Kaj Fehlhaber** <br>

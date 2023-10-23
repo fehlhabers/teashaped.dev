@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "The GitOps Journey 2 - Keep Main Sane"
-date:   2023-10-17
-cover_image: gitops-example/cover.png
-author: Kaj Fehlhaber
+date:   2023-10-19
+authors:
+  - name: Kaj Fehlhaber
 ---
-
+![Cover Image](cover.jpg)
 The first objective of this journey will be to be able to have an infrastructure which supports building applications and deploying these
 to different stages. This is the backbone of any GitOps setup.
 
@@ -45,34 +44,6 @@ Maybe talking about branch protection will trigger some people since it is synon
 is purely TBD, where small updates are done on short lived branches - preferably in mobs or pairs.
 
 PRs act as the vessel to describe the change with minimal effort and where the automated checks which would have been on main, instead are done in the PR.
-
-## 📦 The container
-I've chosen to create a very simple Golang application to be the example at hand. See [the gitops-example repo](https://github.com/fehlhabers/gitops-example/apps/cruncher) for full info.
-However, this can be done in any language as long as it can be containerized. A strength of Golang is that the app can be built into a single binary
-which can be added to `scratch`, eliminating pulling in any potential vulnerabilities in a runtime. In this case, the container weighs in at only **9MB**.
-
-
-**Dockerfile using the builder pattern** 
-```Dockerfile
-# syntax=docker/dockerfile:1
-FROM golang:1.21-alpine AS builder
-
-WORKDIR /src
-COPY . .
-RUN go mod download
-RUN go build -o /bin/app .
-RUN useradd -u 10001 appuser
-
-##########################################################
-FROM scratch
-COPY --from=builder /bin/app app
-COPY --from=builder /etc/passwd /etc/passwd
-EXPOSE 8080
-CMD ["./app"]
-```
-*The builder has the needed parts to build the binary and copies the app & the user info in order to run as non-root*
-
-Now that the application has all the needed setup to be a running container in a secure way, it's time to build a pipeline which can handle many of these applications.
 
 ## Using CodeQL
 When running CodeQL, the configuration is stored in Github Advanced Security in a way which requires all runs to be in the same workflow. Because of this, the same workflow

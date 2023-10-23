@@ -1,13 +1,10 @@
 ---
-layout: post
 title:  "I created a GitHub based homepage!"
 date:   2022-06-03
-last_modified_at: 2022-06-09
-cover_image: 2022-06-03-cover.jpg
-author: Kaj Fehlhaber
-categories: homepage 
+author:
+  - name: Kaj Fehlhaber
 ---
-
+![Cover image](cover.jpg)
 I didn't want to put too much effort in creating a site, but at the same time create something that mirrors who I am.
 I work a lot with teams, cloud architecture and backend functionality, but have never really had the urge to do any advanced frontend work. 
 
@@ -22,7 +19,7 @@ I push my changes, and GitHub actions kick in to publish the changes. 🙌
 
 Writing posts on my mobile also works nice! For example, this particular part of the post was done using [MGit](https://github.com/maks/MGit) &  [markor](https://github.com/gsantner/markor) for Android. The cover picture of me in the sun was added to the post in markor, although it probably needs some automation to be smooth. 🤖
 
-### Quickstart
+### Quick start
 
 The first thing I do when exploring something new is to check out what others have done. Examples are great for learning when backed with the proper documentation. 
 I took a lot of inspiration from [SimonDosdas blog](https://github.com/SimonDosda/SimonDosda.github.io), but have otherwise kept it quite vanilla.
@@ -30,5 +27,10 @@ I took a lot of inspiration from [SimonDosdas blog](https://github.com/SimonDosd
 ### Page is publicly available
 
 The repo for this page is public, so check it out [here](https://github.com/fehlhabers/teashaped.dev) 👈
-Have a try! You can quite easily setup your own page. 
+Have a try! You can quite easily setup your own page.
+
+<br>
+<br>
+<br>
+**Kaj Fehlhaber** <br>
 
