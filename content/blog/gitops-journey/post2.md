@@ -1,6 +1,6 @@
 ---
 title:  "The GitOps Journey 2 - Keep Main Sane"
-date:   2023-10-19
+date:   2023-10-25
 authors:
   - name: Kaj Fehlhaber
 ---

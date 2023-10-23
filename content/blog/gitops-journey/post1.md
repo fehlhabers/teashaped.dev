@@ -140,5 +140,5 @@ The next part of the blog will contain:
 - CI using Github Actions for scanning, tagging & publishing containers
 <br>
 <br>
-<br>
-**Kaj Fehlhaber** <br>
+
+**/Kaj Fehlhaber** <br>

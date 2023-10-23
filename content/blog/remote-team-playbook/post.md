@@ -119,5 +119,5 @@ There is of course a lot into a great team. Without great people, there will not
 I hope this helps whoever reads this in trying out something new and daring to go outside of the norm and instead have a progressive approach to development!
 <br>
 <br>
-<br>
-**Kaj Fehlhaber** <br>
+
+**/Kaj Fehlhaber**

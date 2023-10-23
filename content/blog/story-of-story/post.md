@@ -83,5 +83,5 @@ I hope this story was interesting for you and gave you some fruit for thought!
 
 <br>
 <br>
-<br>
-**Kaj Fehlhaber** <br>
+
+**/Kaj Fehlhaber**

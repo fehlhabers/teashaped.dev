@@ -15,7 +15,7 @@ Here at Teashaped, I, Kaj want to showcase what you can do to make your organisa
 💪 Boosting a team or organization
 
 ### **Building it up from the roots**
-I have a proven background of combining a profound DevOps and agile mindset together with a keen problem solving and architectural thinking. The most common setup is for me to work in a team and boost that team and the organization around it by not only delivering solutions to complex problems, but also by taking absolute ownership and instilling trust in our stakeholders. A natural activity while being a team member is be active in CoPs to also spread the good practices outside of the teams perimeter. Being humble and experimenting a lot are all traits that can be expected.
+I have a proven background of combining a profound DevOps and agile mindset together with a keen problem solving and architectural thinking. The most common setup is for me to work in a team and boost that team and the organization around it by not only delivering solutions to complex problems, but also by taking absolute ownership and instilling trust in our stakeholders. A natural activity while being a team member is to be active in CoPs to also spread the good practices outside of the teams perimeter. Being humble and experimenting a lot are all traits that can be expected.
 
 ### Technology changes
 You could say that Teashaped specializes in generalisation, to be ["T-shaped"](https://teashaped.dev).

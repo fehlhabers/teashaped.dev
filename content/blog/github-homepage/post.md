@@ -31,6 +31,6 @@ Have a try! You can quite easily setup your own page.
 
 <br>
 <br>
-<br>
-**Kaj Fehlhaber** <br>
+
+**/Kaj Fehlhaber**
 
