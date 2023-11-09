@@ -3,6 +3,7 @@ title:  "The GitOps Journey 2 - Keep Main Sane"
 date:   2023-10-25
 authors:
   - name: Kaj Fehlhaber
+draft: true
 ---
 ![Cover Image](cover.jpg)
 The first objective of this journey will be to be able to have an infrastructure which supports building applications and deploying these
