@@ -6,7 +6,6 @@ authors:
 tags:
   - keyboards
 ---
-
 I have never understood the custom keyboard community... Why would you spend so much time and effort to have a special keyboard?
 Wouldn't it just make it harder when getting to a regular keyboard and make yourself tied up?
 
@@ -25,6 +24,21 @@ I have the fortune to work with a bunch of great individuals where we constantly
 
 I'll tell you why...
 
-**Because our team nurtures a culture of constantly improving each other and what we do!** 💪
+**Because our team nurtures a culture of constantly improving each other and what we do!** As a part of that, we spur each other in exploring areas just like custom keyboards, since it is an area which has a good chance of having a positive impact.
 
+After summer I started exploring the notion of ditching the Swedish layout since a lot of the symbols that are used in programming were placed on awkward locations.
+It would make more sense to use the US layout instead for this reason. So begins my journey...
+Obviously, using a US layout means I need to handle åäö when typing Swedish somehow.
+
+Introducing xkb and creating custom layouts!
+
+At this point I had started my journey towards **Vim** (or rather **Neovim**). While I felt that the concept of ditching the mouse in
+favor of moving around with powerful bindings, there was a feeling that I had trouble touch-typing characters that were farther from homerow.
+Didn't think too much about it, but did get a cheap 60% keyboard from Amazon to be able to focus more on the keys near homerow.
+
+We discussed keyboards since there was an event coming up and our new member had gotten a Glove80 not long ago. The question about price did of course come up at this point and I hadn't been willing to make any particular investment before, which I stated. One of the replies sounded something like this:
+
+***"I'm using my keyboard 8h a day. Investing in a keyboard is a no-brainer for me!"***
+
+That evening I made the decision that I would need to 
 
