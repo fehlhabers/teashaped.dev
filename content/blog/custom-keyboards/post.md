@@ -39,7 +39,7 @@ During one of our discussions where a new member shared some about his new Glove
 
 That evening I made the decision that it was time to at leart consider exploring custom keyboards.
 
-# What option are out there?
+# What options are out there?
 I have quite small hands and a reason for even looking at custom keyboards was that I saw a much higher likelihood of being successful
 at touch-typing with a smaller form factor keyboard.
 
@@ -53,7 +53,15 @@ The way fingers need to move on a regular keyboard is quite straining, since key
 
 ### Split keyboards
 I had previously dismissed split keyboards since it didn't work well with how I type(d), but since part of the journey was to learn touch-typing properly it was back on the table.
+
 These come in a large variety, but I was aiming at one with low profile, small form factor and an aggressive column-stagger. Column-stagger means that the keys are staggered in columns so that every finger can get their keys at a distance better suited for the length of the finger. An improvement to the ortholinear placement, really.
 
+The split setup made it possible for all keys I needed to placed in a way which made them easy to reach, so this was the obvious path for me.
 
 I didn't really bother with the bigger form factor, since it was one of my drivers to be able to use a keyboard with few keys.
+
+# Keyboards and open source
+Now that I had an idea on what to look further into, it was time to narrow down the options.
+
+I quickly found out that there are a bunch of open source projects out there with designs - just like with any other software!
+My interest soon started to move towards keyboards such as [Corne](
