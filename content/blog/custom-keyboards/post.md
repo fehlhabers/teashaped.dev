@@ -64,4 +64,15 @@ I didn't really bother with the bigger form factor, since it was one of my drive
 Now that I had an idea on what to look further into, it was time to narrow down the options.
 
 I quickly found out that there are a bunch of open source projects out there with designs - just like with any other software!
-My interest soon started to move towards keyboards such as [Corne](
+My interest soon started to move towards keyboards such as [Corne](https://github.com/foostan/crkbd), [Piantor](https://github.com/beekeeb/piantor) & [Sweep](https://github.com/davidphilipbarr/Sweep). These are minimal keyboards which works with layers rather than many buttons.
+Of course, these differ vastly from a regular keyboard and require that the keys are mapped out to what suits my need!
+
+Enter [**QMK**](https://docs.qmk.fm/#/) & [**ZMK**](https://zmk.dev/)!
+
+These are excellent tools for flashing your keyboard with exactly the behavior you want and open up a completely new world when it comes
+to how to use your keyboard. You can for example set different behavior on tap vs hold - this enables you to use your homerow for shift, ctrl, etc as well! Or the feature to use CAPS WORD, which turns on CAPS for a word, then turns it off!
+
+You can configure your completely own keyboard or you can use countless of configurations which the community has shared.
+
+## Variations
+The open source variants
