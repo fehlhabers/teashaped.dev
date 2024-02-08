@@ -24,20 +24,9 @@ Introducing xkb and creating custom layouts!
 At this point I had started my journey towards **Vim** (or rather **Neovim**). While I felt that the concept of ditching the mouse in
 favor of moving around with powerful bindings, there was a feeling that I had trouble touch-typing characters that were farther from homerow.
 Didn't think too much about it, but did get a cheap 60% keyboard from Amazon to be able to focus more on the keys near homerow.
+This worked quite nice, but noticed that the layout change was a lot better than what the keyboard was (it actually kind of sucked).
 
-I have the fortune to work with a bunch of great individuals where we constantly share experiences and ideas. When we stumbled upon a problem of some sort during the day, the chance is high that someone researched it and came up with a solution proposal or maybe created an open source tool which for the general problem at hand.
-
-**What does this have to do with anything about keyboards?** 🤔
-
-I'll tell you why...
-
-**Because our team nurtures a culture of constantly improving each other and what we do!** As a part of that, we spur each other in exploring areas just like custom keyboards, since it is an area which has a good chance of having a positive impact.
-
-During one of our discussions where a new member shared some about his new Glove80, the question about price of course came up. I hadn't been willing to make any particular investment before, which I stated. One of the replies sounded something like this:
-
-***"I'm using my keyboard 8h a day. Investing in a keyboard is a no-brainer for me!"***
-
-That evening I made the decision that it was time to at leart consider exploring custom keyboards.
+I guess it was at this point that I started actually looking into custom keyboards...
 
 # What options are out there?
 I have quite small hands and a reason for even looking at custom keyboards was that I saw a much higher likelihood of being successful
@@ -74,5 +63,10 @@ to how to use your keyboard. You can for example set different behavior on tap v
 
 You can configure your completely own keyboard or you can use countless of configurations which the community has shared.
 
-## Variations
-The open source variants
+# First jump
+My first build was the Aurora Sweep, which basically is splitkb.coms variant of the Sweep. I really didnt start soft... It was a 34 keys keyboard which would lead me to the world of layers for sure!
+
+And as usual when you try to be smart and take to big steps.... this is where you make mistakes!
+
+During my research I obvously stumbled upon not only different keyboards, but also different layouts. Since the experience of using a split
+keyboard with so few keys would be so different
