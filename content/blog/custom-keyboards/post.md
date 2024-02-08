@@ -101,3 +101,7 @@ This becomes a real mess in your head when holding the button down suddenly make
 I really wanted *some* additional key...
 
 # New try - Kyria
+The thumb cluster with only two buttons was a little bit to small for me (at least as main driver. The form factor is awesome!).
+While I really enjoyed the Sweep I likely will always use my mouse for certain tasks like creating visuals and such. The Sweep setup was nice when you always use both hands... but let's keep it real. You will likely want to do for example copying with your left hand while you use the mouse with the right.
+
+[Kyria](http://www.splitkb.com)
