@@ -63,10 +63,41 @@ to how to use your keyboard. You can for example set different behavior on tap v
 
 You can configure your completely own keyboard or you can use countless of configurations which the community has shared.
 
-# First jump
+# First jump - bring the mistakes
 My first build was the Aurora Sweep, which basically is splitkb.coms variant of the Sweep. I really didnt start soft... It was a 34 keys keyboard which would lead me to the world of layers for sure!
 
 And as usual when you try to be smart and take to big steps.... this is where you make mistakes!
 
+## The Colemak pit
 During my research I obvously stumbled upon not only different keyboards, but also different layouts. Since the experience of using a split
-keyboard with so few keys would be so different
+keyboard with so few keys would be so different I decided to also switch layout to something which was more optimized for the english language since that's what I'm writing most of the time.
+
+I decided to go ahead with `colemak`.
+
+The process to get started was quite slow at first, but got up to speed after a while. When I felt I was proficient enough to at least try out a little bit at work, I quickly realized something - **remapping a whole lot of vim bindings and learning those!** I considered it for a while, but after struggling quite a lot I came to the realization (which you likely have already been thinking of...):
+
+I will need to **go back to qwerty** again.
+
+I guess if I had been writing english text exclusively instead of writing code it might have been different. But the fact is that most typing includes symbols and a lot of navigating through files.
+
+**Vim bindings are universal** so I would basically render all nice navigation in tools like `k9s`, `lf` & `lazygit` useless. Adding custom mappings would just make things complicated.
+
+## Layers, layers, layers
+Using a keyboard with few keys made it easier for me to keep my fingers at the right place and get me better at touch-typing. Coming from someone who has never really learnt touch-typing and usually just sits wrong with the fingers and mistyping everything when the hands wander off.
+
+This does of course come at a cost: the use of layers increases.
+
+**What is a layer?** You might ask...
+
+Basically, you use a layer when you press a button like 'Alt' or 'Ctrl'. On smaller keyboards there are simply additional ways to access other layers where you put keys like symbols, fn and numbers. On a really small keyboard like the **Sweep**, I use the thumb buttons as layer-switches.
+I hold the button down and the layer is switched, but I just tap it and it's a button like `tab`. This would allow me to make use of the keys in a very good way.
+
+Again, `ZMK` is awesome with adding a lot of configuration possibilities that enable all of this.
+
+However, this is sometimes great and sometimes not.
+
+For me when using the sweep, this meant that I needed to use the layer switching for thumb buttons like 'space' and 'backspace'. That's still alright for some applications. However, when using 'space' as leader in `neovim` this is naturally pressed like a modifier key even though you don't have to.
+This becomes a real mess in your head when holding the button down suddenly makes the intended buttons do something completely different.
+I really wanted *some* additional key...
+
+# New try - Kyria
