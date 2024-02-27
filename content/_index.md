@@ -16,8 +16,8 @@ Seems interesting? Read some more about Teashaped and the services we can provid
 ## Latest blog posts
 
 {{< cards >}}
+  {{< card link="blog/custom-keyboards/post" title="Should you try out custom keyboards?" image="/blog/custom-keyboards/cover.jpg" subtitle="I was sure split keyboards wasn't for me. Yet here I am..." >}}
   {{< card link="blog/attract-talent/post" title="5 ways for teams to attract talent" subtitle="The team can do a lot when it comes to attracting the right people! Own your recruitment!" >}}
-  {{< card link="blog/gitops-journey/post1" title="The GitOps Journey - Part 1" image="/blog/gitops-journey/cover.png" subtitle="The first part of the series about building CI/CD in a GitOps fashion" >}}
   {{< card link="blog/story-of-story/post" title="Story of a Story" image="/blog/story-of-story/cover.jpg" subtitle="An example of iteratively do changes where you keep your main branch deployable" >}}
   {{< card link="blog" title="More..." subtitle="Read older posts" icon="book-open" >}}
 {{< /cards >}}
