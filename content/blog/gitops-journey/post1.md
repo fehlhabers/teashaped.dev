@@ -101,8 +101,10 @@ However, all languages can be containerized. It's just a matter of how much of a
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /src
-COPY . .
+COPY go.mod go.sum ./
 RUN go mod download          # Downloads in separate layer for caching
+
+COPY . ./
 RUN go build -o /bin/app .   # Build binary in builder
 RUN useradd -u 10001 appuser # Create non-root user
 
