@@ -9,6 +9,7 @@ tags:
 draft: true
 ---
 ![Cover Image](cover.jpg)
+
 Have you ever felt that you've been watching one YouTube tutorial after another and get inspired, but the never really
 getting to a point where you feel you get better? Or maybe it's about learning something new and you've been browsing
 through half a Udemy course to understand the concept of it?
@@ -82,3 +83,16 @@ see the response.
 
 While you're doing this, you of course do research along the way. Using AI for understanding these parts is a great
 addition to your toolbox.
+
+Let the next question at hand guide you! How do you create a deployment? Research and build it. How do you interact
+between two pods? Find out and build it!
+
+It continues like this and you keep your motivation up since you can piece by piece move forward and you don't feel
+overwhelmed in the same manner.
+
+#### 4. Keep building small pieces
+Just like when building anything, it's about building your software in small batches so you have control over what
+you're doing and you feel motivated since you can feel the progress.
+
+If keeping to the same example, you might want to continue on the Kubernetes road and start adding secrets, deploy a
+database or integrate with managed service from a cloud provider.
