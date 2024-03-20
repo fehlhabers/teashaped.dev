@@ -1,12 +1,12 @@
 ---
-title:  "Escaping the tutorial/analysis loop"
+title:  "3 steps to rapid learning!"
 date:   2024-03-20
 authors:
   - name: Kaj Fehlhaber
 tags:
   - habits
   - exploration
-draft: true
+draft: false
 ---
 ![Cover Image](cover.jpg)
 
@@ -21,14 +21,29 @@ add another element to the equation for it to have any effect:
 
 Or, in other words - instead of discussing a concept, you can just practice it.
 
-## The "design phase"
-This applies to both individuals and teams alike. 
-For teams, this can show itself by the team, before building anything, goes to lengthy discussions about
-what type of technology the new service should be built in. If they are building the apps in a hexagonal architecture,
-what database is the best and that they of course need the latest and greatest framework (just because they "need" it).
+## Patterns seen in the wild
+Maybe you have seen some of these patterns in yourself or in your team (current or old)?
+Let's look at some of the behaviours which I think would benefit from the strategy I'll be
+describing further down...
 
-For individuals, it can really be the same. You just don't have anyone else to discuss it with but yourself. That can be
-enough already in order to get stuck in paralysis.
+### The "design phase"
+This is a phase which happens to individuals and teams alike. 
+
+For teams, this can show itself by the team, before building anything, goes to lengthy discussions about what type of technology the new service should be built in. If they are building the apps in a hexagonal architecture, what database is the best and that they of course need the latest and greatest framework (just because they "need" it).
+
+For individuals, it can really be the same. You just don't have anyone else to discuss it with but yourself. That can be enough already in order to get stuck in paralysis.
+
+### I've read that...
+I believe that everyone has met at least one person who has read a bunch of articles and videos about different topics and has a lot of opinions based on it. If not, then maybe you are that person? ;)
+
+This is all good! You should read and get inspired from others learnings! But be careful - theory requires practice to 
+be converted into experience. Without experience you are likely to apply a theory blindly on a use case where it makes 
+no sense!
+
+For example, you might have read about all companies creating graphQL endpoints and are persistent
+in that the team of course needs to implement a GraphQL endpoint because it would "future proof" the
+service. The problem is, you haven't gotten the experience yet in what it would mean to implement it
+and what the implications are.
 
 ## Escaping the habit
 You might have heard the mantra:
@@ -36,17 +51,20 @@ You might have heard the mantra:
 **Ship often and get feedback from your customers**
 
 The same applies internally. Team and individuals alike.
-What you build doesn't have to be perfect. The whole point is get feedback from yourself on what you've built. That is -
-the journey to get there is what matters. You created it and you gained experience along the way.
+What you build doesn't have to be perfect. 
 
-## Hypothesising & Prototyping
+**The whole point is get feedback from yourself** on what you've built.
+That is - the journey to get there is what matters. You created it and you gained experience along the way. It could be that you understood some benefits but also some drawbacks with the approach you had?
+
+### Hypothesising & Prototyping
 The next time you end up in a discussion in your team and you feel you don't get forward on what design or technology
 you are choosing: Think about how quick it would be to prototype it. Maybe it would be faster to actually create
-something to test? Or maybe even create two prototypes and test them.
+something to test? Or maybe even create two prototypes and test them against each other to pick the
+best.
 
 In our team we seldom go more than 30 minutes into a discussion before someone mentions that it's time to stop the
 discussion and create something. At this phase there is almost always at least a hypothesis or concept which can be
-tried out.
+tried out. 
 
 ## Concrete examples
 
@@ -94,5 +112,4 @@ overwhelmed in the same manner.
 Just like when building anything, it's about building your software in small batches so you have control over what
 you're doing and you feel motivated since you can feel the progress.
 
-If keeping to the same example, you might want to continue on the Kubernetes road and start adding secrets, deploy a
-database or integrate with managed service from a cloud provider.
+If continuing on the Kubernetes road, this could be by adding adding secrets, deploying a database or integrate with managed service from a cloud provider.
