@@ -50,11 +50,13 @@ You might have heard the mantra:
 
 **Ship often and get feedback from your customers**
 
-The same applies internally. Team and individuals alike.
-What you build doesn't have to be perfect. 
+The same applies internally. Team and individuals alike. What you build doesn't
+have to be perfect, but you need to ship something in order to get any
+feedback! 
 
-**The whole point is get feedback from yourself** on what you've built.
-That is - the journey to get there is what matters. You created it and you gained experience along the way. It could be that you understood some benefits but also some drawbacks with the approach you had?
+**The whole point is get feedback from yourself** on what you've built. That is - the journey 
+to get there is what matters. You created it and you gained experience along
+the way. It could be that you understood some benefits but also some drawbacks with the approach you had?
 
 ### Hypothesising & Prototyping
 The next time you end up in a discussion in your team and you feel you don't get forward on what design or technology
@@ -62,9 +64,24 @@ you are choosing: Think about how quick it would be to prototype it. Maybe it wo
 something to test? Or maybe even create two prototypes and test them against each other to pick the
 best.
 
-In our team we seldom go more than 30 minutes into a discussion before someone mentions that it's time to stop the
-discussion and create something. At this phase there is almost always at least a hypothesis or concept which can be
-tried out. 
+In our team, we rarely go more than 30 minutes into a discussion before someone suggests that it's time to end the discussion and start creating something. By this point, there is usually at least a hypothesis or concept that can be tested.
+
+## The 1,2,3 approach
+You're done looking at the tutorial and want to get started. If you just follow some easy ground rules, the process
+is quite easy! 
+
+### Step 1 - Find the next step
+Once you have chosen something you want to look into or prototype, then it's time to break it
+down. Find the next challenge which you need to tackle to get to your goal.
+
+### Step 2 - Research and build
+You have a small challenge to handle. Now find out how you solve it! This could be how you create some css
+to make a button look nice, or creating a "Hello World" app in a new language.
+
+Find out how to procede through documentation, help of AI or other tools and then apply on your project at hand.
+
+### Step 3 - Repeat
+Once you've reached your next step, there will be a new challenge to tackle to solve the next step. You keep repeating this cycle until you reach your goal.
 
 ## Concrete examples
 
@@ -82,7 +99,8 @@ At this point you hopefully know that Kubernetes is used to orchestrate containe
 Now reflect on this.
 
 Do you know how to work with containers? Can you build one and can you run it locally?
-If not, then it might be good to take a step back and do step 2 with the precondition instead!
+If not, then maybe a good first step is to do something with containers? Maybe create a "Hello World"
+container?
 
 #### 2. Create a lab environment
 You now have an idea how the technology is used and it's time to just start experimenting. Setting up an environment
