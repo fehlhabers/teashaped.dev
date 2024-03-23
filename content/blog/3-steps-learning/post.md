@@ -100,7 +100,7 @@ Now reflect on this.
 
 Do you know how to work with containers? Can you build one and can you run it locally?
 If not, then maybe a good first step is to do something with containers? Maybe create a "Hello World"
-container?
+container? But let's consider that you do know it.
 
 #### 2. Create a lab environment
 You now have an idea how the technology is used and it's time to just start experimenting. Setting up an environment
