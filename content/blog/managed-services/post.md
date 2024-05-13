@@ -60,8 +60,8 @@ Let's jump to the next trouble in cloud wonderland!
 At the same time, features are being built which led to [aggregate functions](https://www.mongodb.com/docs/manual/aggregation/) being used in the MongoDB API when
 fetching data.*
 
-Local testing was done using [testcontainers](testcontainers.com) and things looked good. Bam! 🚀 Deployed the changes in
-local [kind](kind.sigs.k8s.io) cluster and system tests are all green! 🙌
+Local testing was done using [testcontainers](https://testcontainers.com) and things looked good. Bam! 🚀 Deployed the changes in
+local [kind](https://kind.sigs.k8s.io) cluster and system tests are all green! 🙌
 
 At this stage we're using containerized MongoDB, so we're able to deploy the equivalent locally. (There is an Azure
 Cosmos emulator out there as well, but the container weighs in at more than 1GB and very slow to start)
@@ -115,12 +115,12 @@ service architecture.
 ### 📨 Messaging/events
 Kafka is the de facto standard today when it comes to handling events between services. But there is also a very
 interesting competitor out there, which has been around for quite some time but which has gained more traction recently
-with the introduction of their new feature "JetStreams". I'm talking about [N.A.T.S](nats.io), which is an incubating
-project within the [CNCF](landscape.cncf.io) landscape. It combines the power of events and messaging, making it a lot
+with the introduction of their new feature "JetStreams". I'm talking about [N.A.T.S](https://nats.io), which is an incubating
+project within the [CNCF](https://landscape.cncf.io) landscape. It combines the power of events and messaging, making it a lot
 more feature rich that Kafka, which often needs to be paired with some other type of persistence when implementing
 retries on certain messages.
 
-Like most good apps, it's written in [Go](go.dev) 😉 and can be deployed as a cluster, where the application is just a few
+Like most good apps, it's written in [Go](https://go.dev) 😉 and can be deployed as a cluster, where the application is just a few
 MB. This is definitely worth taking an extra look at. I know that I will! 👀
 
 Did I mention you can use it as a key-value store as well? Check it out! It has a bunch of features bundled in a very
