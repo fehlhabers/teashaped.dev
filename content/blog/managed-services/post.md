@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "When managed services stop being fun" 
-date:   2024-05-05
+date:   2024-05-13
 authors:
   - name: Kaj Fehlhaber
 tags: 
