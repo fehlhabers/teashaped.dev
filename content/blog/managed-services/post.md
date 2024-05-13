@@ -55,11 +55,18 @@ several hundred $/month just starting out, but AWS clearly also is very expensiv
 [MSK pricing page](https://aws.amazon.com/msk/pricing/). Wasn't the point with serverless that it should be "pay per use"?
 
 ### 🔧 The "compatible" API
-At the same time, features are being built which led to the [aggregate functions](https://www.mongodb.com/docs/manual/aggregation/) to be used in the MongoDB API when
-fetching data* .
+Let's jump to the next trouble in cloud wonderland!
+
+At the same time, features are being built which led to [aggregate functions](https://www.mongodb.com/docs/manual/aggregation/) being used in the MongoDB API when
+fetching data.*
+
 Local testing was done using [testcontainers](testcontainers.com) and things looked good. Bam! 🚀 Deployed the changes in
 local [kind](kind.sigs.k8s.io) cluster and system tests are all green! 🙌
 
+At this stage we're using containerized MongoDB, so we're able to deploy the equivalent locally. (There is an Azure
+Cosmos emulator out there as well, but the container weighs in at more than 1GB and very slow to start)
+
+**The whole solution screamed relational database, which was later used 🙏🐘*
 ![Trying to make Cosmos MongoDB compatible](mongo_azure.jpg)
 Time to merge the PR to build & deploy the updated app! 😃
 
@@ -70,17 +77,28 @@ MongoDB API compatible when you start wandering outside of the really vanilla qu
 It was simply not able to execute the query properly, but instead returned an empty result. What other differences are
 there in behavior that we hadn't found yet?
 
-**The whole solution screamed relational database, which was later used 🙏🐘*
+This experience really got some of our members having trust issues with Cosmos DB. Could we continue to use it for
+normal cases? I would argue that it would be safe to do so when querying for indexed keys, but the question is - where
+is the line where it stops working and what do you do when you find yourself in the need of using that feature which is
+out of your reach? (Maybe you should also argue for [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+and handle it when you get there...)
 
 ## ➡️ What directions to take?
 Having worked multiple years with AWS and Azure, there are many good products out there - but they often come with
 caveats which teams either just throw money at to solve the issue or require a science degree just to optimize the usage
-to make it cost efficient.
+to make it cost efficient. I have literally seen teams working for years to come up with strategies on how to reduce
+cost and share best practices in how this can be achieved. Everything from advanced calculations on automatically 
+setting provisioned capacity to batching lambdas, making application logic complex to reduce invocations.
 
 I'm more and more leaning towards options which include portable solutions instead of managed solutions - at least for
 organizations of a certain size who can handle the overhead.
 Nowadays, operators can be used extensively in Kubernetes to handle databases in higher degree and keeping to a
-streamlined solution can build up expertise within the organization in that technology.
+streamlined solution can build up expertise within the organization in that technology. State might not be so horrible
+after all. 🤔 (It certainly has helped drive the managed services)
+
+Let's have a **quick** dive in what options could be out there if setting out to create a service and you are willing to
+put some effort into having a cost effective solution in place. (yes, building expertise in-house costs $$, so it's
+always a calculation that you need to make)
 
 ### 📚 Database
 Postgres is an excellent example of a tool which has existed for a long time now and which can be used for most use
@@ -89,18 +107,21 @@ advanced sharding. It also supports both relational as well as [document store](
 A Kubernetes deployed Postgres can scale to many instances which can serve read traffic and can be vertically scaled to
 handle many thousands of write operations per second.
 
-Maybe a good fit for your team as well?
+Maybe a good fit for your team as well? I would argue that there are few services that require even more in a micro
+service architecture.
 
 ![Postgres & Kubernetes](pg_k8s.png)
 
 ### 📨 Messaging/events
 Kafka is the de facto standard today when it comes to handling events between services. But there is also a very
-interesting competition out there, which has been around for quite some time but which has gained more traction recently
+interesting competitor out there, which has been around for quite some time but which has gained more traction recently
 with the introduction of their new feature "JetStreams". I'm talking about [N.A.T.S](nats.io), which is an incubating
-project within the [CNCF](landscape.cncf.io) landscape.
+project within the [CNCF](landscape.cncf.io) landscape. It combines the power of events and messaging, making it a lot
+more feature rich that Kafka, which often needs to be paired with some other type of persistence when implementing
+retries on certain messages.
 
 Like most good apps, it's written in [Go](go.dev) 😉 and can be deployed as a cluster, where the application is just a few
-MB. This is definitely worth taking an extra look at.
+MB. This is definitely worth taking an extra look at. I know that I will! 👀
 
 Did I mention you can use it as a key-value store as well? Check it out! It has a bunch of features bundled in a very
 small package which all have the necessary ingredients to improve development.
@@ -115,7 +136,7 @@ applications locally in a good way.
 If keeping the technologies that hold persistent data to a minimum, you are more likely too build up competence around
 these technologies so that you can handle disaster recovery in the same (or better) way as with managed services.
 
-I just brushed lightly on the messaging and database topics, but it's worth diving into more deeply at some other time.
+I just brushed lightly on the messaging and database topics, but it's worth diving into more deeply at some other time!
 <br>
 <br>
 
