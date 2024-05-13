@@ -18,8 +18,8 @@ new features were easy to add.
 The stateless apps could run nicely in Kubernetes while Azure Event Hub was leveraged as an event streaming
 service. Azure Cosmos DB stood for the persistence. Life was good.
 
-Open api equivalents were used to integrate with the services instead of the native ones (Kafka
-API for events and MongoDB API for document database) in order to make local development a joy.
+Open api equivalents were used to integrate with the services instead of the native ones (Kafka API for events and MongoDB
+API for document database) in order to make local development a joy.
 
 ## Trouble ahead
 Using managed services aren't always all good. It usually comes with a price, and the question is if you are willing to
@@ -51,9 +51,9 @@ fetching data (The whole solution screamed relational database, which was later 
 Local testing was done using [testcontainers](testcontainers.com) and things looked good. Bam! Deployed the changes in
 local [kind](kind.sigs.k8s.io) cluster and system tests are all green! 🙌
 
-Time to merge the PR to build & deploy the updated app!
+Time to merge the PR to build & deploy the updated app! 😃
 
-System tests go 🔴...
+System tests go 🔴... 😱
 
 Head-scratching begins, but quite quickly the realization comes to us that Azure Cosmos DB for MongoDB API isn't really
 MongoDB API compatible when you start wandering outside of the really vanilla queries.
@@ -80,10 +80,24 @@ handle many thousands of write operations per second.
 Maybe a good fit for your team as well?
 
 ### Messaging/events
-Kafka is the defacto standard today when it comes to handling events between services. But there is also a very
+Kafka is the de facto standard today when it comes to handling events between services. But there is also a very
 interesting competition out there, which has been around for quite some time but which has gained more traction recently
 with the introduction of their new feature "JetStreams". I'm talking about [N.A.T.S](nats.io), which is an incubating
 project within the [CNCF](landscape.cncf.io) landscape.
 
 Like most good apps, it's written in [Go](go.dev) and can be deployed as a cluster, where the application is just a few
-MB.
+MB. This is definitely worth taking an extra look at.
+
+## Final Thoughts
+Managed services definitely have their place in a lot of use cases, but as with many others, the pendulum has reached the
+limit for me and it's currently going back more to self-managed services to a higher degree.
+Don't be afraid to use them, but **do** have a strategy for how you can switch provider and how you are able to test
+applications locally in a good way. 
+If keeping the technologies that hold persistent data to a minimum, you are more likely too build up competence around
+these technologies so that you can handle disaster recovery in the same (or better) way as with managed services.
+
+I just brushed lightly on the messaging and database topics, but it's worth diving into more deeply at some other time.
+<br>
+<br>
+
+**Kaj Fehlhaber**
