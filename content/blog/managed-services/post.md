@@ -72,8 +72,8 @@ Time to merge the PR to build & deploy the updated app! 😃
 
 System tests go 🔴... 😱
 
-🤔 Head-scratching begins, but quite quickly the realization comes to us that Azure Cosmos DB for MongoDB API isn't really
-MongoDB API compatible when you start wandering outside of the really vanilla queries.
+🤔 Head-scratching begins, but quite quickly the realization comes to us that **Azure Cosmos DB for MongoDB API isn't really
+MongoDB API compatible** when you start wandering outside of the really vanilla queries.
 It was simply not able to execute the query properly, but instead returned an empty result. What other differences are
 there in behavior that we hadn't found yet?
 
