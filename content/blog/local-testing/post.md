@@ -31,7 +31,7 @@ necessary tooling for observability and a lot more.
 What might **not** be discussed as often is that any Kubernetes workload can be very effectively tested locally in for
 example a [`kind`](https://kind.sigs.k8s.io/) (single node) cluster. You can literally re-create your whole cluster
 together with an entire observability stack, messaging service and persistence, together with you apps - in matter of
-just a few minutes.
+just a few minutes or less.
 
 And since you are practicing GitOps, the local cluster is setup just like any other stage with the exception that you
 likely won't run any CD tool.
@@ -46,4 +46,4 @@ active community being behind big steps when it comes to for example operators f
 I just recently wrote a blog post about [Managed services](../managed-services/post) where some side effects of managed
 services where discussed. When using managed services, open api:s should also be used - for the reason of local testing.
 If using proprietary api:s, there will always be a tax to the local testing experience.
-But you could get away from this altogether by using 
+But you could get away from this altogether by using open api:s and even better - to deploy your services 
