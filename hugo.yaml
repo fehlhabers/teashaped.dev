@@ -29,23 +29,31 @@ menu:
     - name: Services
       pageRef: /services
       weight: 3
+    - name: Mentorship
+      pageRef: /mentorship
+      weight: 4
     - name: Contact
       url: "/contact"
-      weight: 4
-    - name: Search
       weight: 5
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: GitHub
-      weight: 6
+      weight: 7
       url: "https://github.com/kejne"
       params:
         icon: github
     - name: LinkedIn
-      weight: 7
+      weight: 8
       url: "https://www.linkedin.com/in/kajfehlhaber/"
       params:
         icon: linkedin
+    - name: RSS
+      weight: 9
+      url: "/index.xml"
+      params:
+        icon: rss
 
 params:
   navbar:
