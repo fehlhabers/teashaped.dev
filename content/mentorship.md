@@ -41,4 +41,5 @@ The mentorship is **free of charge**.
 
 ### To the application 👇
 
-📨 [**Apply here**](https://forms.gle/qx2zdkXJTEFTxeM16) 📨
+The application window is not yet open, but hope to open it soon enough! ⌛
+📨 [**Apply here**](https://forms.gle/qx2zdkXJTEFTxeM16) 📨 (once it's open)

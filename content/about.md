@@ -10,7 +10,7 @@ Here at Teashaped, I, Kaj want to showcase what you can do to make your organisa
 
 ☁️ Designing a system or Cloud architecture
 
-🤖 Designing and building CI/CD
+🤖 Platform engineering within the CNCF sphere
 
 💪 Boosting a team or organization
 
