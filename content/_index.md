@@ -11,6 +11,7 @@ Seems interesting? Read some more about Teashaped and the services we can provid
 {{< cards >}}
   {{< card link="about" title="About Teashaped" subtitle="Learn more about Teashaped" icon="user-group" >}}
   {{< card link="services" title="Services" subtitle="Short and long term assignment proposals to get that boost!" icon="academic-cap" >}}
+  {{< card link="mentorship" title="Mentorship" subtitle="NEW! Offering mentorships. Read more!" icon="light-bulb" >}}
 {{< /cards >}}
 
 ## Latest blog posts
