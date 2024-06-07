@@ -54,7 +54,7 @@ jobs:
         run: |
           hugo \
             --gc --minify \
-            --baseURL "https://teshaped.dev"
+            --baseURL "https://teashaped.dev"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
