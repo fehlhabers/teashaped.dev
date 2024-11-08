@@ -49,6 +49,11 @@ menu:
       url: "https://www.linkedin.com/in/kajfehlhaber/"
       params:
         icon: linkedin
+    - name: Mastodon
+      weight: 9
+      url: "https://hachyderm.io/@kejne"
+      params:
+        icon: mastodon
     - name: RSS
       weight: 9
       url: "/index.xml"
