@@ -1,0 +1,12 @@
+[tools]
+go = "latest"
+hugo = "latest"
+
+[tasks."hugo:serve"]
+run = "hugo serve"
+
+[tasks."hugo:build"]
+run = "hugo --gc --minify"
+
+[tasks."hugo:update"]
+run = "hugo mod get -u"
