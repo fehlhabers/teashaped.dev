@@ -1,6 +1,7 @@
 ---
 title:  "How AI killed mob programming"
 date:   2026-01-11
+draft:  true
 authors:
   - name: Kaj Fehlhaber
 tags:
