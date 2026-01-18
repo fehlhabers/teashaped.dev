@@ -30,21 +30,19 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.123.8
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Go
-        uses: actions/setup-go@v5.0.0
+        uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version-file: "go.mod"
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.6.0
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.123.8'
+          hugo-version: "latest"
           extended: true
       - name: Build with Hugo
         env:
@@ -56,7 +54,7 @@ jobs:
             --gc --minify \
             --baseURL "https://teashaped.dev"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -70,4 +68,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.4
+        uses: actions/deploy-pages@v4
