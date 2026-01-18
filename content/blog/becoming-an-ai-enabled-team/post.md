@@ -1,6 +1,6 @@
 ---
 title:  "Transforming into an AI-enabled team"
-date:   2026-01-11
+date:   2026-01-18
 draft:  false
 authors:
   - name: Kaj Fehlhaber
@@ -22,6 +22,7 @@ levels. Not only for the knowledge spread, but also building culture.
 
 However, times change - I now find myself having these sessions with AI agents.
 
+![](./pair-with-agents.png)
 What was previously a session where the goal might be to create a functionality and that everyone getting familiar with the
 details of the solution has now moving more and more towards handling higher level goals and to keep agents going in a
 common direction.
@@ -32,7 +33,7 @@ This is nothing that I have done by any specific stance or rule, but it rather h
 feel that it's hard to be able to manage multiple agents at the same time that I discuss with team mates. It's just too
 much discussions going in at the same time for me to feel like I can focus.
 
-## The new details
+## The details
 I start to care less and less if the code generated is exactly according to what my style of code is. What is important
 is that the code does what it should. Refactoring is done at such speed by AI that it's no longer a large endeavour to
 do so.
@@ -86,7 +87,6 @@ This is applicable for all type of skills. Vibe coding just as much as any other
 have several sessions with my team; learning, teaching, sharing!
 
 Pairing sessions can have the exact same function as before, just on another level!
-![](./pair-with-agents.png)
 
 ## Taking the step
 Just talk about it and make small steps. AI used by a novice will not give you very impressive results right away. It
