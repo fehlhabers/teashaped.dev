@@ -20,7 +20,7 @@ multiple new teams; using git handovers and having timers to discuss how we solv
 one thing. This has been vital for getting a team up an running, especially with a diverse team of different experience
 levels. Not only for the knowledge spread, but also building culture.
 
-However, times change - I now find myself having these sessions with AI agents.
+However, times change - I now find myself having most of these sessions with AI agents.
 
 ![](./pair-with-agents.png)
 What was previously a session where the goal might be to create a functionality and that everyone getting familiar with the
@@ -30,8 +30,8 @@ common direction.
 *I no longer conduct mob sessions with the goal of refactoring code by hand.*
 
 This is nothing that I have done by any specific stance or rule, but it rather has just naturally become this way. I
-feel that it's hard to be able to manage multiple agents at the same time that I discuss with team mates. It's just too
-much discussions going in at the same time for me to feel like I can focus.
+have just started to feel that it doesn't add much value anymore since I could create a bugfix using an agent. As long
+as it does what it should. To create proper acceptance tests and feedback loops in the other hand...
 
 ## The details
 I start to care less and less if the code generated is exactly according to what my style of code is. What is important
@@ -94,6 +94,8 @@ Just talk about it and make small steps. AI used by a novice will not give you v
 so the trust is not too high that it will succeed.
 
 What I think is crucial is for the entire team to understand that this is a new paradigm. You will get **very**
-productive, but only if you're able to get proficient in working with it.
+productive, but only if you're able to get proficient in working with it. You will need to learn to create the guard
+rails needed and to make your agent continously add improvements to itself, how it should get feedback on changes and
+what success looks like.
 
 *You won't get proficient without practicing. So pick something real to work on to hone your skills together!*
