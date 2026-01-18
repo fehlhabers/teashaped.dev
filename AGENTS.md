@@ -36,6 +36,11 @@ hugo --gc --minify --baseURL "https://teashaped.dev"
 - `layouts/partials/custom/` - Custom template overrides
 - `static/` - Static assets (images, favicons, etc.)
 
+### Homepage Latest Blog Posts
+- The homepage list is manually curated in `content/_index.md` under "Latest blog posts" using the `{{< cards >}}` shortcode.
+- Add the newest post as a `{{< card ... >}}` entry at the top of that list and keep the "More..." card last.
+- Thumbnail images are referenced as `/blog/<slug>/<image>` and should match an existing file in `content/blog/<slug>/` (commonly `cover.*`).
+
 ### Frontmatter Format
 All markdown files must include YAML frontmatter:
 
