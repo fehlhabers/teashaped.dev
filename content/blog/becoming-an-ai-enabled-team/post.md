@@ -31,7 +31,7 @@ common direction.
 
 This is nothing that I have done by any specific stance or rule, but it rather has just naturally become this way. I
 have just started to feel that it doesn't add much value anymore since I could create a bugfix using an agent. As long
-as it does what it should. To create proper acceptance tests and feedback loops in the other hand...
+as it does what it should. To create proper acceptance tests and feedback loops on the other hand...
 
 ## The details
 I start to care less and less if the code generated is exactly according to what my style of code is. What is important
@@ -48,7 +48,7 @@ have a place?
 
 ![](./different-worlds.png)
 Maybe you've seen this unfold at your workplace? Some have taken the plunge to embrace vibe coding (I still think that
-the name has not been very helpful) and some stick to at most code-completion and perhaps chat assisted coding. *
+the name has not been very helpful) and some stick to at most code-completion and perhaps chat assisted coding.
 
 If you mix both in one code base, you get *none of the benefits*:
 - Code reviews get awful because AI can refactor at high speed which make the code reviews a major bottleneck. The code
@@ -56,15 +56,18 @@ If you mix both in one code base, you get *none of the benefits*:
 - If you instead only introduce AI in a modest amount, you're missing out on the speed of agents and still keep all
   the cognitive load.
 
-## Begin small
+## The AI-only repository
 My take is that any team would benefit from at least choosing one repository which is **purely** updated by agents - no
 human touches the code. *Why?*
 
 - The team learns how to vibe code and how to do it in a controlled way. This is still a young discipline. Getting the
   team to be proficient is the key to take the step.
-- There is an entire code base which the team does not need to know exactly how it is implemented. Since AI can refactor
+- There is an entire code base which the team does not need to know the details about. Since AI can refactor
   at such speed, it's possible to do so. Code reviews are sped up dramatically since the focus is on a higher level.
 - The team is able to iterate on guard rails in CI and tests, enabling agents to verify their own work and keep on track.
+
+It makes sense to chose the least critical application - mostly for everyone to feel comfortable with working with AI on
+a deeper level.
 
 But what about the way of working in the team?
 
