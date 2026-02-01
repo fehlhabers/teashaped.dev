@@ -21,17 +21,17 @@ I've been experimenting with vibe coding for a while now, and one thing became c
 
 The problem is Linux speech-to-text tools are... complicated. I tried several options and kept hitting walls. They either didn't work at all, didn't support Wayland, had broken global hotkeys, or required the use of cloud services.
 
-I just wanted to press a key, speak, and have text appear where my cursor was. No cloud, no dependencies, no complex setup.
+I just wanted to press a key, speak, and have text appear where my cursor was. No cloud, no dependencies, no complex setup. It had to be a single binary that would work in many different environments.
 
 ## The Weekend Project
 
-So I decided to build it myself. The catch? I'd never written Rust before. I knew nothing about audio capture on Linux, nothing about integrating with Whisper, nothing about X11 or Wayland internals.
+Since I didn't find any application that ticked the boxes, I decided to build it myself. I did a short AI planning session which resulted in a Rust based or Go based solution. With some back and forth, it seemed like Rust had the better eco system for working with more low level integration. The catch? I'd never written Rust before. I knew nothing about audio capture on Linux, nothing about voice transcribing, nothing about X11 or Wayland internals.
 
-But I'd been practicing vibe coding "for real" lately. I knew how to work with AI agents, how to set up guard rails, how to iterate quickly. Steve Yegge and Gene Kim's book *Vibe Coding* had been on my mind, particularly their FAAFO framework - Fast, Ambitious, Autonomous, Fun, and Optionality. The core idea is that projects once deemed too difficult or time-consuming become feasible when you have AI assistance.
+But I'd been practicing vibe coding "for real" lately. I knew how to work with AI agents, how to set up guard rails, how to iterate quickly. Steve Yegge and Gene Kim's book *Vibe Coding* had been on my mind, particularly their [FAAFO](https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/) framework - Fast, Ambitious, Autonomous, Fun, and Optionality. The core idea is that projects once deemed too difficult or time-consuming become feasible when you have AI assistance.
 
 This seemed like the perfect test of that *Ambitious* dimension.
 
-The traditional approach would be weeks of learning Rust fundamentals, then weeks studying audio APIs, then weeks on Whisper integration. I never have time for these kinds of projects - time I'd rather spend with my family. They always end up in the "maybe someday" freezer.
+The traditional approach would be weeks of learning Rust fundamentals, then weeks studying audio APIs, then weeks on voice model integration. I never have time for these kinds of projects - time I'd rather spend with my family. They always end up in the "maybe someday" freezer.
 
 But with AI assistance? Maybe this was different.
 
@@ -52,7 +52,10 @@ Each time I added new behavior - first audio capture, then transcription, then t
 
 With an agent, refactoring took minutes instead of hours. There was no reason to let technical debt accumulate. The architecture improved continuously. This is the *Fun* part Yegge and Kim talk about - building rather than debugging, iterating rather than wrestling with syntax.
 
-The Rust compiler helped here too. Its strict type system caught errors that would have been runtime surprises in Python or JavaScript. When the agent generated code that didn't compile, those error messages became part of the feedback loop. Fix, recompile, iterate.
+The Rust compiler helped here too. Its strict type system caught errors that would have been runtime surprises in Python or JavaScript. When the agent generated code that didn't compile, those error messages became part of the feedback loop. The error messages really show what's wrong. Fix, recompile, iterate.
+
+(This is the part where I think Golang would have been the clear winner, though. Compilation time does become a factor
+when iterating fast.)
 
 ## What I Actually Built
 
