@@ -13,14 +13,13 @@ tags:
 
 ![SoundVibes - A Linux speech-to-text tool](./cover.png)
 
-I never intended to build a speech-to-text application. I had zero experience with Rust. Yet here I am, with [SoundVibes](https://soundvibes.teashaped.dev) - a working voice dictation tool for Linux that I built in a weekend in Rust. This is the story of how I got there, and what it taught me about this new way of building software.
+I never intended to build a speech-to-text application. I had zero experience with Rust. Yet here I am, with [SoundVibes](https://soundvibes.teashaped.dev) - a working voice dictation tool for Linux that I built in a weekend. This is the story of how I got there, and what it taught me about this new way of building software.
 
 ## The Frustration That Started It
 
 I've been experimenting with vibe coding for a while now, and one thing became clear: speaking your ideas is a lot faster than typing them. Developers think at speaking speed but type at a fraction of that. Voice dictation makes sense when you're trying to keep up with the flow of ideas.
 
-The problem is Linux speech-to-text tools are... complicated. I tried several options and kept hitting walls.
-They either didn't work at all, didn't support Wayland, had broken global hotkeys, or required the use of cloud services.
+The problem is Linux speech-to-text tools are... complicated. I tried several options and kept hitting walls. They either didn't work at all, didn't support Wayland, had broken global hotkeys, or required the use of cloud services.
 
 I just wanted to press a key, speak, and have text appear where my cursor was. No cloud, no dependencies, no complex setup.
 
@@ -28,38 +27,42 @@ I just wanted to press a key, speak, and have text appear where my cursor was. N
 
 So I decided to build it myself. The catch? I'd never written Rust before. I knew nothing about audio capture on Linux, nothing about integrating with Whisper, nothing about X11 or Wayland internals.
 
-But I'd been recently practicing vibe coding "for real". I knew how to work with AI agents, how to set up guard rails, how to iterate quickly. Steve Yegge and Gene Kim's book on vibe coding had been on my mind, particularly the idea that projects once deemed too difficult become feasible when you have AI assistance. This seemed like the perfect test.
+But I'd been practicing vibe coding "for real" lately. I knew how to work with AI agents, how to set up guard rails, how to iterate quickly. Steve Yegge and Gene Kim's book *Vibe Coding* had been on my mind, particularly their FAAFO framework - Fast, Ambitious, Autonomous, Fun, and Optionality. The core idea is that projects once deemed too difficult or time-consuming become feasible when you have AI assistance.
 
-The traditional approach would be weeks of learning Rust fundamentals, then weeks studying audio APIs, then weeks on Whisper integration. I never have the time to do these kind of projects on my spare time. Time that I rather spend with my family, leaving projects like these in the freezer.
+This seemed like the perfect test of that *Ambitious* dimension.
+
+The traditional approach would be weeks of learning Rust fundamentals, then weeks studying audio APIs, then weeks on Whisper integration. I never have time for these kinds of projects - time I'd rather spend with my family. They always end up in the "maybe someday" freezer.
+
+But with AI assistance? Maybe this was different.
+
+> "Projects that once seemed too difficult or time-consuming become feasible, opening new possibilities for what can be accomplished."
+> — Yegge & Kim, *Vibe Coding*
 
 ## Building Differently
 
-Here's the thing about vibe coding: vibe coding isn't about knowing less. It's about applying your expertise differently. I couldn't write Rust fluently, but I knew how to design interfaces, how to structure tests, how to validate that something actually worked.
+Here's the thing about vibe coding: it's not about knowing less. It's about applying your expertise differently. I couldn't write Rust fluently, but I knew how to design interfaces, how to structure tests, how to validate that something actually worked. This is what makes the *Autonomous* dimension real - you're not dependent on finding a Rust expert or spending months ramping up. You can move independently because the AI fills the knowledge gaps.
 
-The key was closing the feedback loop. I set up high-level behavioral tests early - not unit tests checking individual functions, but integration tests that verified the whole flow from audio capture to text appearing on screen. These became my safety net. The agent could refactor, reorganize, extend the code, and immediately know if something broke.
+The key was closing the feedback loop - critical for that *Fast* dimension. I set up high-level behavioral tests early, not unit tests checking individual functions, but integration tests that verified the whole flow from audio capture to text appearing on screen. These became my safety net. The agent could refactor, reorganize, extend the code, and immediately know if something broke.
 
-I also established CI/CD from day one through GitHub Actions. Every change got built and tested automatically - patterns
-that are no different than regular software development. But also being able to run the same tests locally with a hook
-always makes the agent get the needed feedback.
+I also established CI/CD from day one through GitHub Actions. Every change got built and tested automatically - patterns no different than regular software development. But the key was being able to run the same tests locally with a hook, so the agent always got the needed feedback immediately.
 
 ## Iterative Refactoring
 
 Each time I added new behavior - first audio capture, then transcription, then the actual text injection - I'd have the agent refactor the codebase. This kept any sessions to the point and avoided broken functionality.
 
-With an agent, refactoring took minutes instead of hours. There was no reason to let technical debt accumulate. The architecture improved continuously.
+With an agent, refactoring took minutes instead of hours. There was no reason to let technical debt accumulate. The architecture improved continuously. This is the *Fun* part Yegge and Kim talk about - building rather than debugging, iterating rather than wrestling with syntax.
 
 The Rust compiler helped here too. Its strict type system caught errors that would have been runtime surprises in Python or JavaScript. When the agent generated code that didn't compile, those error messages became part of the feedback loop. Fix, recompile, iterate.
 
 ## What I Actually Built
 
-SoundVibes ended up as a single static binary. No Python dependencies, no virtual environments, no package conflicts. Download it, run it, done. It handles Whisper model downloads automatically on first run and using GPU with Vulkan.
+SoundVibes ended up as a single static binary. No Python dependencies, no virtual environments, no package conflicts. Download it, run it, done. It handles Whisper model downloads automatically on first run, using GPU with Vulkan when available.
 
 The architecture solved a problem that had frustrated me with other tools: hotkeys. Instead of fighting with X11 or Wayland's inconsistent global hotkey APIs, I split the application into a daemon that listens on a Unix socket and a lightweight client. This means you can trigger SoundVibes with whatever hotkey system you already use - xbindkeys, sxhkd, your window manager's shortcuts, even a Stream Deck. The hotkey binding is decoupled from the application itself.
 
 It works on both Wayland and X11, typing text wherever your cursor happens to be. Terminal, browser, IDE, chat application - doesn't matter. The text appears at the cursor. Everything runs locally.
 
-The amazing part: I created a tool that I would have never started working on otherwise. And I don't have any worry that
-I won't be able to maintain it.
+The amazing part: I created a tool that I would have never started working on otherwise. And I don't have any worry that I won't be able to maintain it. This is *Optionality* in action - the ability to explore and build without committing weeks or months upfront. A project that would have sat in the freezer forever became a weekend experiment that actually shipped.
 
 ## The Realization
 
