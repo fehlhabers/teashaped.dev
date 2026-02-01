@@ -1,0 +1,80 @@
+---
+title: "Building SoundVibes: From Zero Rust to Voice in a Weekend"
+date: 2026-01-31
+draft: false
+authors:
+  - name: Kaj Fehlhaber
+tags:
+  - ai
+  - vibe-coding
+  - rust
+  - linux
+---
+
+![SoundVibes - A Linux speech-to-text tool](./cover.png)
+
+I never intended to build a speech-to-text application. I had zero experience with Rust. Yet here I am, with [SoundVibes](https://soundvibes.teashaped.dev) - a working voice dictation tool for Linux that I built in a weekend. This is the story of how I got there, and what it taught me about this new way of building software.
+
+## The Frustration That Started It
+
+I've been experimenting with vibe coding for a while now, and one thing became clear: speaking your ideas is a lot faster than typing them. Developers think at speaking speed but type at a fraction of that. Voice dictation makes sense when you're trying to keep up with the flow of ideas.
+
+The problem is Linux speech-to-text tools are... complicated. I tried several options and kept hitting walls. They either didn't work at all, didn't support Wayland, had broken global hotkeys, or required the use of cloud services.
+
+I just wanted to press a key, speak, and have text appear where my cursor was. No cloud, no dependencies, no complex setup. It had to be a single binary that would work in many different environments.
+
+## The Weekend Project
+
+Since I didn't find any application that ticked the boxes, I decided to build it myself. I did a short AI planning session which resulted in a Rust based or Go based solution. With some back and forth, it seemed like Rust had the better eco system for working with more low level integration. The catch? I'd never written Rust before. I knew nothing about audio capture on Linux, nothing about voice transcribing, nothing about X11 or Wayland internals.
+
+But I'd been practicing vibe coding "for real" lately. I knew how to work with AI agents, how to set up guard rails, how to iterate quickly. Steve Yegge and Gene Kim's book *Vibe Coding* had been on my mind, particularly their [FAAFO](https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/) framework - Fast, Ambitious, Autonomous, Fun, and Optionality. The core idea is that projects once deemed too difficult or time-consuming become feasible when you have AI assistance.
+
+This seemed like the perfect test of that *Ambitious* dimension.
+
+The traditional approach would be weeks of learning Rust fundamentals, then weeks studying audio APIs, then weeks on voice model integration. I never have time for these kinds of projects - time I'd rather spend with my family. They always end up in the "maybe someday" freezer.
+
+But with AI assistance? Maybe this was different.
+
+> "Projects that once seemed too difficult or time-consuming become feasible, opening new possibilities for what can be accomplished."
+> — Yegge & Kim, *Vibe Coding*
+
+## Building Differently
+
+Here's the thing about vibe coding: it's not about knowing less. It's about applying your expertise differently. I couldn't write Rust fluently, but I knew how to design interfaces, how to structure tests, how to validate that something actually worked. This is what makes the *Autonomous* dimension real - you're not dependent on finding a Rust expert or spending months ramping up. You can move independently because the AI fills the knowledge gaps.
+
+The key was closing the feedback loop - critical for that *Fast* dimension. I set up high-level behavioral tests early, not unit tests checking individual functions, but integration tests that verified the whole flow from audio capture to text appearing on screen. These became my safety net. The agent could refactor, reorganize, extend the code, and immediately know if something broke.
+
+I also established CI/CD from day one through GitHub Actions. Every change got built and tested automatically - patterns no different than regular software development. But the key was being able to run the same tests locally with a hook, so the agent always got the needed feedback immediately.
+
+## Iterative Refactoring
+
+Each time I added new behavior - first audio capture, then transcription, then the actual text injection - I'd have the agent refactor the codebase. This kept any sessions to the point and avoided broken functionality.
+
+With an agent, refactoring took minutes instead of hours. There was no reason to let technical debt accumulate. The architecture improved continuously. This is the *Fun* part Yegge and Kim talk about - building rather than debugging, iterating rather than wrestling with syntax.
+
+The Rust compiler helped here too. Its strict type system caught errors that would have been runtime surprises in Python or JavaScript. When the agent generated code that didn't compile, those error messages became part of the feedback loop. The error messages really show what's wrong. Fix, recompile, iterate.
+
+(This is the part where I think Golang would have been the clear winner, though. Compilation time does become a factor
+when iterating fast.)
+
+## What I Actually Built
+
+SoundVibes ended up as a single static binary. No Python dependencies, no virtual environments, no package conflicts. Download it, run it, done. It handles Whisper model downloads automatically on first run, using GPU with Vulkan when available.
+
+The architecture solved a problem that had frustrated me with other tools: hotkeys. Instead of fighting with X11 or Wayland's inconsistent global hotkey APIs, I split the application into a daemon that listens on a Unix socket and a lightweight client. This means you can trigger SoundVibes with whatever hotkey system you already use - xbindkeys, sxhkd, your window manager's shortcuts, even a Stream Deck. The hotkey binding is decoupled from the application itself.
+
+It works on both Wayland and X11, typing text wherever your cursor happens to be. Terminal, browser, IDE, chat application - doesn't matter. The text appears at the cursor. Everything runs locally.
+
+The amazing part: I created a tool that I would have never started working on otherwise. And I don't have any worry that I won't be able to maintain it. This is *Optionality* in action - the ability to explore and build without committing weeks or months upfront. A project that would have sat in the freezer forever became a weekend experiment that actually shipped.
+
+## The Realization
+
+SoundVibes works. I use it daily now for code comments, documentation, commit messages, even drafting blog posts like this one. But the tool itself isn't the important part.
+
+What's important is understanding how the barrier to building software has shifted. You don't need to be an expert in every technology anymore. You need to be an expert in defining what you want, setting up ways to validate it, and knowing when the output is correct. The implementation details can be handled collaboratively with AI.
+
+This isn't abdicating engineering responsibility. It's shifting where you apply judgment. Architecture matters. Testing matters. Knowing whether something actually solves the problem matters. Variable naming and syntax? Much less so when an agent can refactor in seconds.
+
+The mindset isn't about recklessness. It's about calculated risk-taking enabled by AI assistance. Projects that once sat in the "maybe someday when I have time to learn the tech" bucket suddenly become weekend projects.
+
+If you're wondering whether you're "ready" to build something ambitious with AI assistance, the answer is you're never fully ready. That's kind of the point.

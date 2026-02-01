@@ -16,6 +16,7 @@ Seems interesting? Read some more about Teashaped and the services we can provid
 ## Latest blog posts
 
 {{< cards >}}
+  {{< card link="blog/soundvibes-vibe-coding/post" title="Building SoundVibes: From Zero Rust to Voice in a Weekend" image="/blog/soundvibes-vibe-coding/cover.png" subtitle="How FAAFO and vibe coding enabled building a speech-to-text tool without prior Rust experience" >}}
   {{< card link="blog/becoming-an-ai-enabled-team/post" title="Transforming into an AI-enabled team" image="/blog/becoming-an-ai-enabled-team/pair-with-agents.png" subtitle="Why adoption of vibe coding is still more cultural than technical" >}}
   {{< card link="blog/managed-services/post" title="When managed services stop being fun" image="/blog/managed-services/cover.jpg" subtitle="Is it always a good idea to use managed services like Azure Cosmos or DynamoDB?" >}}
   {{< card link="blog/power-of-polyglot/post" title="The Usefulness of Polyglot Services" image="/blog/power-of-polyglot/cover.png" subtitle="How decoding a niche payload made us go polyglot" >}}
