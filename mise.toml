@@ -1,12 +1,23 @@
 [tools]
-go = "latest"
-hugo = "latest"
+go = "1.26"
+hugo = "0.163"
 
 [tasks."hugo:serve"]
+description = "Start local dev server with hot reload"
 run = "hugo serve"
 
 [tasks."hugo:build"]
+description = "Production build (minified)"
 run = "hugo --gc --minify"
 
+[tasks."hugo:build:prod"]
+description = "Production build for GitHub Pages deploy"
+run = "hugo --gc --minify --baseURL 'https://teashaped.dev'"
+
 [tasks."hugo:update"]
-run = "hugo mod get -u"
+description = "Update Hugo modules (Hextra theme)"
+run = "hugo mod get -u && hugo mod clean"
+
+[tasks.dev]
+description = "Start development server"
+run = "hugo serve"

@@ -26,8 +26,8 @@ menu:
     - name: About
       pageRef: /about
       weight: 2
-    - name: Services
-      pageRef: /services
+    - name: Consulting
+      url: "https://fehlhaberconsulting.se"
       weight: 3
     - name: Contact
       url: "/contact"
