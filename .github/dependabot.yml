@@ -5,9 +5,7 @@ updates:
   - package-ecosystem: gomod
     directory: /
     schedule:
-      interval: monthly
-      time: "06:00"
-      timezone: UTC
+      interval: "monthly"
       day: 1
     allow:
       # direct and indirect updates
