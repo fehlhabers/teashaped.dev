@@ -28,4 +28,4 @@ I would like to refer to myself as an technology agnostic builder.
 | ![Kaj](/images/kaj.jpg)<br>Kaj Fehlhaber   |  With 15 years of experience within software and having been<br> both a technical & team leader for multiple successful teams and products,<br> Kaj is unafraid of setting paths in unknown areas and leading teams through these<br><br>For up to date details about experience and skills, please visit ⭐ [my LinkedIn](https://www.linkedin.com/in/kajfehlhaber/) ⭐ <br> |
 |--------------- | --------------- |
 
-Teashaped Development is created by Fehlhaber Consulting AB.
+Teashaped Development is created by [Fehlhaber Consulting AB](https://fehlhaberconsulting.se) — visit the site for consulting, coaching, and professional services.
